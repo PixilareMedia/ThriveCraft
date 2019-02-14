@@ -1,2 +1,7 @@
+//Items
 item.petrified_sapling.name=Petrified Sapling
 item.petrified_door.name=Petrified Door
+//Blocks
+tile.petrified_planks.name=Petrified Planks
+tile.petrified_bark.name=Petrified Bark
+tile.petrified_log.name=Petrified Log
