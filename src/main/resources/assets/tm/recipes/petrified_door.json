@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RR",
+        "RR",
+        "RR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "tm:petrified_planks"
+        }
+    },
+   
+    "result":
+    {
+        "item": "tm:petrified_door",
+        "count": 3
+    }
+}

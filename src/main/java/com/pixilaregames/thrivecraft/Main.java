@@ -1,8 +1,11 @@
 package com.pixilaregames.thrivecraft;
 
+import com.pixilaregames.thrivecraft.init.ModBlocks;
 import com.pixilaregames.thrivecraft.proxy.CommonProxy;
 import com.pixilaregames.thrivecraft.util.Reference;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -38,4 +41,13 @@ public class Main {
 		
 	}
 	
+	public static CreativeTabs tabThriveCraft = new CreativeTabs("tabthrivecraft")
+	{
+		
+		@Override
+		public ItemStack getTabIconItem()
+		{
+			return new ItemStack(ModBlocks.PETRIFIED_LOG);
+		}
+	};
 }

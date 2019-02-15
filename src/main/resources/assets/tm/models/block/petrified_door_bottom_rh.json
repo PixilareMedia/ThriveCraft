@@ -1,0 +1,7 @@
+{
+   "parent": "block/door_bottom_rh",
+   "textures": {
+       "bottom": "tm:blocks/petrified_door_bottom",
+       "top": "tm:blocks/petrified_door_top"
+   }
+}

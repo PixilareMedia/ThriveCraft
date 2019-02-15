@@ -1,5 +1,7 @@
 package com.pixilaregames.thrivecraft.blocks;
 
+import com.pixilaregames.thrivecraft.Main;
+
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
@@ -16,5 +18,6 @@ public class Petrified_Planks extends BlockBase
 		//setLightLevel(1.0F);
 		//setLightOpacity(1);
 		//setBlockUnbreakable();
+		setCreativeTab(Main.tabThriveCraft);
 	}
 }

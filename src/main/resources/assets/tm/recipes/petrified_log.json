@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RT"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "tm:stripped_petrified_log"
+        },
+        "T":
+        {
+            "item": "tm:petrified_bark"
+        }
+    },
+   
+    "result":
+    {
+        "item": "tm:petrified_log",
+        "count": 1
+    }
+}
