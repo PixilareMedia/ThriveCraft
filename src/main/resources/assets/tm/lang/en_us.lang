@@ -4,6 +4,10 @@ item.petrified_door.name=Petrified Door
 item.onyx.name=Onyx
 //Tools
 item.onyx_sword.name=Onyx Sword
+item.onyx_shovel.name=Onyx Shovel
+item.onyx_pickaxe.name=Onyx Pickaxe
+item.onyx_axe.name=Onyx Axe
+item.onyx_hoe.name=Onyx Hoe
 //Blocks
 tile.petrified_planks.name=Petrified Planks
 tile.petrified_bark.name=Petrified Bark
