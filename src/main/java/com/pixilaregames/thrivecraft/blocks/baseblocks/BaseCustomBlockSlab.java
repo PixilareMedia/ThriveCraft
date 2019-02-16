@@ -76,7 +76,7 @@ public abstract class BaseCustomBlockSlab extends BlockSlab
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune)
 	{
-		return Item.getItemFromBlock(ModBlocks.PETRIFIED_SLAB_HALF);
+		return Item.getItemFromBlock(ModBlocks.PETRIFIED_PLANKS);
 	}
 	
 	@Override
