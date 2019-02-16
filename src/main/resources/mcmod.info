@@ -2,13 +2,13 @@
 {
   "modid": "tm",
   "name": "Thrive Craft Mod",
-  "description": "A Mod made by 3 people",
+  "description": "A Mod that brings some big bosses and hard things to the table",
   "version": "1.0",
   "mcversion": "1.12.2",
-  "url": "",
+  "url": "https://github.com/PixilareGames/ThriveCraft",
   "updateUrl": "",
   "authorList": ["TheTrueDuality Herobrain_gamer GamerGabriel"],
-  "credits": "",
+  "credits": "Herobrain_gamer - Coding, GamerGabriel - Artist, TheTrueDuality - Ideas(Slave Master)",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
