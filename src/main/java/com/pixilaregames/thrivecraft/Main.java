@@ -1,6 +1,7 @@
 package com.pixilaregames.thrivecraft;
 
 import com.pixilaregames.thrivecraft.init.ModBlocks;
+import com.pixilaregames.thrivecraft.init.ModRecipes;
 import com.pixilaregames.thrivecraft.proxy.CommonProxy;
 import com.pixilaregames.thrivecraft.util.Reference;
 
@@ -32,7 +33,7 @@ public class Main {
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		
+		ModRecipes.init();
 	}
 	
 	@EventHandler

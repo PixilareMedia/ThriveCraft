@@ -1,6 +1,9 @@
 //Items
 item.petrified_sapling.name=Petrified Sapling
 item.petrified_door.name=Petrified Door
+item.onyx.name=Onyx
+//Tools
+item.onyx_sword.name=Onyx Sword
 //Blocks
 tile.petrified_planks.name=Petrified Planks
 tile.petrified_bark.name=Petrified Bark
@@ -9,5 +12,7 @@ tile.stripped_petrified_log.name=Stripped Petrified Log
 tile.stripped_petrified_bark.name=Stripped Petrified Bark
 tile.petrified_sapling.name=Petrified Sapling
 tile.petrified_door.name=Petrified Door
+tile.onyx_ore.name=Onyx Ore
+tile.onyx_block.name=Onyx Block
 //Creative Tabs
 itemGroup.tabthrivecraft=Thrive Craft
