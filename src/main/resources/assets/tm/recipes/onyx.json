@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "tm:onyx_block"
+        }
+    },
+   
+    "result":
+    {
+        "item": "tm:onyx",
+        "count": 9
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "R",
+        "S",
+        "S"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "tm:onyx"
+        },
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "tm:onyx_shovel",
+        "count": 1
+    }
+}

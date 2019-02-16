@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RR",
+        "S ",
+        "S "
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "tm:onyx"
+        },
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "tm:onyx_hoe",
+        "count": 1
+    }
+}

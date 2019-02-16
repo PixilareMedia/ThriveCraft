@@ -8,6 +8,11 @@ item.onyx_shovel.name=Onyx Shovel
 item.onyx_pickaxe.name=Onyx Pickaxe
 item.onyx_axe.name=Onyx Axe
 item.onyx_hoe.name=Onyx Hoe
+//Armor
+item.onyx_helmet.name=Onyx Helmet
+item.onyx_chestplate.name=Onyx Chestplate
+item.onyx_leggings.name=Onyx Leggings
+item.onyx_boots.name=Onyx Boots
 //Blocks
 tile.petrified_planks.name=Petrified Planks
 tile.petrified_bark.name=Petrified Bark
