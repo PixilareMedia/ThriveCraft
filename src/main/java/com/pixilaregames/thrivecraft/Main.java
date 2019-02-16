@@ -48,7 +48,7 @@ public class Main {
 		@Override
 		public ItemStack getTabIconItem()
 		{
-			return new ItemStack(ModBlocks.PETRIFIED_LOG);
+			return new ItemStack(ModBlocks.ONYX_BLOCK);
 		}
 	};
 }
