@@ -22,8 +22,8 @@ public class GuiPetrifiedChest extends GuiContainer
 		this.playerInventory = playerInventory;
 		this.te = chestInventory;
 		
-		this.xSize = 179;
-		this.ySize = 256;
+		this.xSize = 176;
+		this.ySize = 222;
 	}
 	
 	@Override

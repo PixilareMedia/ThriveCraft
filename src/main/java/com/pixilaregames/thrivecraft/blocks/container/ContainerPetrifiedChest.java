@@ -23,7 +23,7 @@ public class ContainerPetrifiedChest extends Container
 		{
 			for(int j = 0; j < 9; ++j)
 			{
-				this.addSlotToContainer(new Slot(tileEntityPetrifiedChest, j + i*9, 3 + j*18, 18 + i*18));
+				this.addSlotToContainer(new Slot(tileEntityPetrifiedChest, j + i*9, 8 + j*18, 18 + i*18));
 			}
 		}
 		
@@ -31,13 +31,13 @@ public class ContainerPetrifiedChest extends Container
 		{
 			for(int x = 0; x < 9; x++)
 			{
-				this.addSlotToContainer(new Slot(playerInv, x + y*9 + 9, 8 + x*18, 175 + y*18));
+				this.addSlotToContainer(new Slot(playerInv, x + y*9 + 9, 8 + x*18, 140 + y*18));
 			}
 		}
 		
 		for(int x = 0; x < 9; x++)
 		{
-			this.addSlotToContainer(new Slot(playerInv, x, 8 + x*18, 233));
+			this.addSlotToContainer(new Slot(playerInv, x, 8 + x*18, 198));
 		}
 	}
 	

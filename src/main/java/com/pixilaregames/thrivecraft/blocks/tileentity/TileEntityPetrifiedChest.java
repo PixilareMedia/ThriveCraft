@@ -18,14 +18,14 @@ import net.minecraft.util.math.AxisAlignedBB;
 
 public class TileEntityPetrifiedChest extends TileEntityLockableLoot implements ITickable
 {
-	private NonNullList<ItemStack> chestContents = NonNullList.<ItemStack>withSize(72, ItemStack.EMPTY);
+	private NonNullList<ItemStack> chestContents = NonNullList.<ItemStack>withSize(54, ItemStack.EMPTY);
 	public int numPlayersUsing, ticksSinceSync;
 	public float lidAngle, prevLidAngle;
 	
 	@Override
 	public int getSizeInventory()
 	{
-		return 72;
+		return 54;
 	}
 	
 	@Override
