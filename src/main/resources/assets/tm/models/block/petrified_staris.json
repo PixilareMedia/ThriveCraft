@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "tm:blocks/petrified_planks",
+        "top": "tm:blocks/petrified_planks",
+        "side": "tm:blocks/petrified_planks"
+    }
+}

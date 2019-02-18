@@ -9,14 +9,14 @@ import com.pixilaregames.thrivecraft.blocks.Onyx_Block;
 import com.pixilaregames.thrivecraft.blocks.Onyx_Ore;
 import com.pixilaregames.thrivecraft.blocks.Petrified_Bark;
 import com.pixilaregames.thrivecraft.blocks.BlockDoorBase;
+import com.pixilaregames.thrivecraft.blocks.Petrified_Chest;
 import com.pixilaregames.thrivecraft.blocks.Petrified_Door;
 import com.pixilaregames.thrivecraft.blocks.Petrified_Log;
 import com.pixilaregames.thrivecraft.blocks.Petrified_Planks;
 import com.pixilaregames.thrivecraft.blocks.Petrified_Sapling;
+import com.pixilaregames.thrivecraft.blocks.Petrified_Stairs;
 import com.pixilaregames.thrivecraft.blocks.Stripped_Petrified_Bark;
 import com.pixilaregames.thrivecraft.blocks.Stripped_Petrified_Log;
-import com.pixilaregames.thrivecraft.blocks.baseblocks.BaseCustomBlockDoubleSlab;
-import com.pixilaregames.thrivecraft.blocks.baseblocks.BaseCustomBlockHalfSlab;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -39,6 +39,7 @@ public class ModBlocks
 	public static final Block STRIPPED_PETRIFIED_BARK = new Stripped_Petrified_Bark("stripped_petrified_bark", Material.WOOD);
 	public static final Block PETRIFIED_SAPLING = new Petrified_Sapling("petrified_sapling", Material.WOOD);
 	public static final Block PETRIFIED_DOOR = new Petrified_Door("petrified_door", Material.WOOD);
+	public static final Block PETRIFIED_CHEST = new Petrified_Chest("petrified_chest");
 	
 	public static final Block ONYX_ORE = new Onyx_Ore("onyx_ore", Material.ROCK);
 	public static final Block ONYX_BLOCK = new Onyx_Block("onyx_block", Material.ROCK);

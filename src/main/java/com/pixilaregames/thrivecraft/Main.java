@@ -4,6 +4,7 @@ import com.pixilaregames.thrivecraft.init.ModBlocks;
 import com.pixilaregames.thrivecraft.init.ModRecipes;
 import com.pixilaregames.thrivecraft.proxy.CommonProxy;
 import com.pixilaregames.thrivecraft.util.Reference;
+import com.pixilaregames.thrivecraft.util.handlers.RegistryHandler;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -34,6 +35,7 @@ public class Main {
 	public static void init(FMLInitializationEvent event)
 	{
 		ModRecipes.init();
+		RegistryHandler.initRegistries();
 	}
 	
 	@EventHandler

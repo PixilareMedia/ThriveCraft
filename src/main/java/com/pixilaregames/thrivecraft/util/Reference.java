@@ -9,4 +9,6 @@ public class Reference {
 	public static final String CLIENT_PROXY_CLASS = "com.pixilaregames.thrivecraft.proxy.ClientProxy";
 	public static final String COMMON_PROXY_CLASS = "com.pixilaregames.thrivecraft.proxy.CommonProxy";
 	
+	public static final int GUI_PETRIFIED_CHEST = 2;
+	
 }
