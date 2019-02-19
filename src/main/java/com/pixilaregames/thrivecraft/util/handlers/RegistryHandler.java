@@ -3,7 +3,9 @@ package com.pixilaregames.thrivecraft.util.handlers;
 import com.pixilaregames.thrivecraft.Main;
 import com.pixilaregames.thrivecraft.blocks.animation.RenderPetrifiedChest;
 import com.pixilaregames.thrivecraft.blocks.tileentity.TileEntityPetrifiedChest;
+import com.pixilaregames.thrivecraft.commands.CommandDimensionTleport;
 import com.pixilaregames.thrivecraft.init.ModBlocks;
+import com.pixilaregames.thrivecraft.init.ModDimension;
 import com.pixilaregames.thrivecraft.init.ModItems;
 import com.pixilaregames.thrivecraft.util.IHasModel;
 
@@ -16,6 +18,8 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.event.FMLServerStartedEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
@@ -60,10 +64,14 @@ public class RegistryHandler {
 	}
 	public static void perInitRegistries()
 	{
-		
+		ModDimension.registerDimensions();
 	}
 	public static void initRegistries()
 	{
 		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
+	}
+	public static void serverRegistries(FMLServerStartingEvent event)
+	{
+		event.registerServerCommand(new CommandDimensionTleport());
 	}
 }

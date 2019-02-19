@@ -7,6 +7,7 @@ import com.pixilaregames.thrivecraft.Main;
 import com.pixilaregames.thrivecraft.blocks.BlockBase;
 import com.pixilaregames.thrivecraft.blocks.Onyx_Block;
 import com.pixilaregames.thrivecraft.blocks.Onyx_Ore;
+import com.pixilaregames.thrivecraft.blocks.PetrifiedCavePortal;
 import com.pixilaregames.thrivecraft.blocks.Petrified_Bark;
 import com.pixilaregames.thrivecraft.blocks.BlockDoorBase;
 import com.pixilaregames.thrivecraft.blocks.Petrified_Chest;
@@ -43,4 +44,6 @@ public class ModBlocks
 	
 	public static final Block ONYX_ORE = new Onyx_Ore("onyx_ore", Material.ROCK);
 	public static final Block ONYX_BLOCK = new Onyx_Block("onyx_block", Material.ROCK);
+	
+	public static final Block PETRIFIEDCAVEPORTAL = new PetrifiedCavePortal("petrified_cave_portal");
 }
