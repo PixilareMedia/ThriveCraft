@@ -28,3 +28,5 @@ tile.onyx_block.name=Onyx Block
 container.petrified_chest=Petrified Chest
 //Creative Tabs
 itemGroup.tabthrivecraft=Thrive Craft
+//Portals
+tile.petrified_cave_portal.name=Petrified Cave Portal

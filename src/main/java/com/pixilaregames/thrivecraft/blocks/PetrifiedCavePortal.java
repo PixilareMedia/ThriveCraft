@@ -1,5 +1,6 @@
 package com.pixilaregames.thrivecraft.blocks;
 
+import com.pixilaregames.thrivecraft.Main;
 import com.pixilaregames.thrivecraft.commands.util.Teleport;
 
 import net.minecraft.block.material.Material;
@@ -16,6 +17,8 @@ public class PetrifiedCavePortal extends BlockBase
 	public PetrifiedCavePortal(String name)
 	{
 		super(name, Material.ROCK);
+		setCreativeTab(Main.tabThriveCraft);
+		setBlockUnbreakable();
 	}
 	
 	@Override

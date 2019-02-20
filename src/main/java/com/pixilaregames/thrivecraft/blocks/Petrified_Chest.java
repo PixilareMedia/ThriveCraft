@@ -8,6 +8,7 @@ import com.pixilaregames.thrivecraft.util.Reference;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
@@ -29,6 +30,10 @@ public class Petrified_Chest extends BlockContainer {
 		super(Material.WOOD);
 		setUnlocalizedName(name);
 		setRegistryName(name);
+		setSoundType(SoundType.WOOD);
+		setHardness(2.0F);
+		setResistance(10.0F);
+		setHarvestLevel("axe", 0);
 		setCreativeTab(Main.tabThriveCraft);
 		
 		ModBlocks.BLOCKS.add(this);
