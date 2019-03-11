@@ -1,4 +1,6 @@
 {
+	//Onyx Stuff
+	//Items
 	"item.thrivecraft.onyx_gem": "Onyx Gem",
 	"item.thrivecraft.onyx_sword": "Onyx Sword",
 	"item.thrivecraft.onyx_axe": "Onyx Axe",
@@ -8,5 +10,16 @@
 	"item.thrivecraft.onyx_helmet": "Onyx Helmet",
 	"item.thrivecraft.onyx_chestplate": "Onyx Chestplate",
 	"item.thrivecraft.onyx_leggings": "Onyx Leggings",
-	"item.thrivecraft.onyx_boots": "Onyx Boots"
+	"item.thrivecraft.onyx_boots": "Onyx Boots",
+	//Blocks
+	"block.thrivecraft.onyx_block": "Onyx Block",
+	"block.thrivecraft.onyx_ore": "Onyx Ore",
+	
+	//Petrified Stuff
+	//Blocks
+	"block.thrivecraft.stripped_petrified_log": "Stripped Petrified Log",
+	"block.thrivecraft.stripped_petrified_bark": "Stripped Petrified Bark",
+	"block.thrivecraft.petrified_log": "Petrified Log",
+	"block.thrivecraft.petrified_bark": "Petrified Bark",
+	"block.thrivecraft.petrified_planks": "Petrified Planks"
 }

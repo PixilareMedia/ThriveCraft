@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube_all",
+    "textures":
+    {
+        "particle": "thrivecraft:block/petrified_log",
+        "up": "thrivecraft:block/petrified_log_top",
+        "down": "thrivecraft:block/petrified_log_top",
+        "north": "thrivecraft:block/petrified_log",
+        "south": "thrivecraft:block/petrified_log",
+        "east": "thrivecraft:block/petrified_log",
+        "west": "thrivecraft:block/petrified_log"
+    }
+}
