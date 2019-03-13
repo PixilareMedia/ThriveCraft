@@ -1,6 +1,6 @@
 {
     "variants":
     {
-        "": { "model": "thrivecraft:block/petrified_log" }
+        "": { "model": "thrivecraft:block/stripped_petrified_log" }
     }
 }
