@@ -1,6 +1,6 @@
 How to get forge 1.13.2 to load in eclipse
 
-1. get the version that is listed when this file is updated (forge-1.13.2-25.0.79)
+1. get the version that is listed when this file is updated (forge-1.13.2-25.0.85)
 2. open the cmd and go to the directory that you want the mod enviorment in
 3. drop the forge mdk & the stuff from the respostory in there
 4. run "gradlew eclipse"

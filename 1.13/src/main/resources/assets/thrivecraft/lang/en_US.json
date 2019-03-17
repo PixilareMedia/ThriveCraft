@@ -21,5 +21,9 @@
 	"block.thrivecraft.stripped_petrified_bark": "Stripped Petrified Bark",
 	"block.thrivecraft.petrified_log": "Petrified Log",
 	"block.thrivecraft.petrified_bark": "Petrified Bark",
-	"block.thrivecraft.petrified_planks": "Petrified Planks"
+	"block.thrivecraft.petrified_planks": "Petrified Planks",
+	
+	//Guis
+	//Creative
+	"itemGroup.thrivecraft": "Thrive Craft"
 }

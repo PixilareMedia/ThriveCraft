@@ -1,17 +1,15 @@
 modLoader="javafml"
 loaderVersion="[24,)"
-credits="Herobrain_gamer_Coding,GamerGabriel_Textures,TheTrueDuility_SlaveDrivingAss"
-authors="Herobrain_gamer,GamerGabriel,TheTrueDuility"
 
 [[mods]] #mandatory
-modId="thrivecraft"
-version="0.1"
-displayName="Thrive Craft"
-description='''
-This is a mod that adds a bunch of stuff
-like mobs, blocks, items, ore, armor, bosses ect
-This mod is awesome as rated by no-one
-'''
+	modId="thrivecraft"
+	version="0.1"
+	displayName="Thrive Craft"
+	credits="Herobrain_gamer For Coding,GamerGabriel For Textures,TheTrueDuility For Slave Driving Asshole"
+	authors="Herobrain_gamer,GamerGabriel,TheTrueDuility"
+	description='''
+	Ian Please Add A Description.
+	'''
 
 [[dependencies.thrivecraft]]
     modId="forge" #mandatory

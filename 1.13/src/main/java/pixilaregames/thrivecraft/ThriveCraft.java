@@ -17,6 +17,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import pixilaregames.thrivecraft.itemgroups.ThriveCraftItemGroup;
 import pixilaregames.thrivecraft.lists.BlockList;
 import pixilaregames.thrivecraft.lists.ItemList;
 
@@ -27,6 +28,8 @@ public class ThriveCraft
 	public static ThriveCraft instance;
 	public static final String modid = "thrivecraft";
 	private static final Logger logger = LogManager.getLogger(modid);
+	
+	public static final ItemGroup thrivecraft = new ThriveCraftItemGroup();
 	
 	public ThriveCraft()
 	{
@@ -58,27 +61,27 @@ public class ThriveCraft
 			(
 					//Onyx Stuff
 					//Items
-					ItemList.onyx_gem = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_gem")),
-					ItemList.onyx_sword = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_sword")),
-					ItemList.onyx_axe = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_axe")),
-					ItemList.onyx_pickaxe = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_pickaxe")),
-					ItemList.onyx_shovel = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_shovel")),
-					ItemList.onyx_hoe = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_hoe")),
-					ItemList.onyx_helmet = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_helmet")),
-					ItemList.onyx_chestplate = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_chestplate")),
-					ItemList.onyx_leggings = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_leggings")),
-					ItemList.onyx_boots = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("onyx_boots")),
+					ItemList.onyx_gem = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_gem")),
+					ItemList.onyx_sword = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_sword")),
+					ItemList.onyx_axe = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_axe")),
+					ItemList.onyx_pickaxe = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_pickaxe")),
+					ItemList.onyx_shovel = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_shovel")),
+					ItemList.onyx_hoe = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_hoe")),
+					ItemList.onyx_helmet = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_helmet")),
+					ItemList.onyx_chestplate = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_chestplate")),
+					ItemList.onyx_leggings = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_leggings")),
+					ItemList.onyx_boots = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_boots")),
 					//Blocks
-					ItemList.onyx_block = new ItemBlock(BlockList.onyx_block, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.onyx_block.getRegistryName()),
-					ItemList.onyx_ore = new ItemBlock(BlockList.onyx_ore, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.onyx_ore.getRegistryName()),
+					ItemList.onyx_block = new ItemBlock(BlockList.onyx_block, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.onyx_block.getRegistryName()),
+					ItemList.onyx_ore = new ItemBlock(BlockList.onyx_ore, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.onyx_ore.getRegistryName()),
 					
 					//Petrified Stuff
 					//Blocks
-					ItemList.stripped_petrified_log = new ItemBlock(BlockList.stripped_petrified_log, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.stripped_petrified_log.getRegistryName()),
-					ItemList.stripped_petrified_bark = new ItemBlock(BlockList.stripped_petrified_bark, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.stripped_petrified_bark.getRegistryName()),
-					ItemList.petrified_log = new ItemBlock(BlockList.petrified_log, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.petrified_log.getRegistryName()),
-					ItemList.petrified_bark = new ItemBlock(BlockList.petrified_bark, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.petrified_bark.getRegistryName()),
-					ItemList.petrified_planks = new ItemBlock(BlockList.petrified_planks, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.petrified_planks.getRegistryName())
+					ItemList.stripped_petrified_log = new ItemBlock(BlockList.stripped_petrified_log, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.stripped_petrified_log.getRegistryName()),
+					ItemList.stripped_petrified_bark = new ItemBlock(BlockList.stripped_petrified_bark, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.stripped_petrified_bark.getRegistryName()),
+					ItemList.petrified_log = new ItemBlock(BlockList.petrified_log, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_log.getRegistryName()),
+					ItemList.petrified_bark = new ItemBlock(BlockList.petrified_bark, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_bark.getRegistryName()),
+					ItemList.petrified_planks = new ItemBlock(BlockList.petrified_planks, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_planks.getRegistryName())
 			);
 			
 			logger.info("Items Registered");
