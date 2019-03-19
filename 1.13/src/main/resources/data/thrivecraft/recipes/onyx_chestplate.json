@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "R R",
+        "RRR",
+        "RRR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:onyx_gem"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:onyx_chestplate"
+    }
+}
