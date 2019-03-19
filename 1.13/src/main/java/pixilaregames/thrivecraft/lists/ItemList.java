@@ -29,4 +29,6 @@ public class ItemList
 	public static Item petrified_planks;
 	public static Item petrified_door;
 	public static Item petrified_sapling;
+	public static Item petrified_slab;
+	public static Item petrified_stairs;
 }

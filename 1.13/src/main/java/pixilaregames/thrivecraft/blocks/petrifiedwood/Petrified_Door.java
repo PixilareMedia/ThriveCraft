@@ -1,4 +1,4 @@
-package pixilaregames.thrivecraft.blocks.petrified;
+package pixilaregames.thrivecraft.blocks.petrifiedwood;
 
 import pixilaregames.thrivecraft.blocks.base.BlockDoorBase;
 

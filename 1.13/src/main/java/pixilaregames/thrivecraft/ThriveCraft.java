@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Block.Properties;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemGroup;
@@ -18,9 +19,18 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import pixilaregames.thrivecraft.blocks.onyx.Onyx_Block;
 import pixilaregames.thrivecraft.blocks.onyx.Onyx_Ore;
-import pixilaregames.thrivecraft.blocks.petrified.Petrified_Door;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Bark;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Door;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Log;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Planks;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Sapling;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Slab;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Bark;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Log;
 import pixilaregames.thrivecraft.itemgroups.ThriveCraftItemGroup;
+import pixilaregames.thrivecraft.items.onyx.Onyx_Gem;
 import pixilaregames.thrivecraft.lists.BlockList;
 import pixilaregames.thrivecraft.lists.ItemList;
 
@@ -64,7 +74,7 @@ public class ThriveCraft
 			(
 					//Onyx Stuff
 					//Items
-					ItemList.onyx_gem = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_gem")),
+					ItemList.onyx_gem = new Onyx_Gem(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_gem")),
 					ItemList.onyx_sword = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_sword")),
 					ItemList.onyx_axe = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_axe")),
 					ItemList.onyx_pickaxe = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_pickaxe")),
@@ -86,7 +96,9 @@ public class ThriveCraft
 					ItemList.petrified_bark = new ItemBlock(BlockList.petrified_bark, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_bark.getRegistryName()),
 					ItemList.petrified_planks = new ItemBlock(BlockList.petrified_planks, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_planks.getRegistryName()),
 					ItemList.petrified_sapling = new ItemBlock(BlockList.petrified_sapling, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_sapling.getRegistryName()),
-					ItemList.petrified_door = new ItemBlock(BlockList.petrified_door, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_door.getRegistryName())
+					ItemList.petrified_door = new ItemBlock(BlockList.petrified_door, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_door.getRegistryName()),
+					ItemList.petrified_slab = new ItemBlock(BlockList.petrified_slab, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_slab.getRegistryName())
+					//ItemList.petrified_stairs = new ItemBlock(BlockList.petrified_stairs, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_stairs.getRegistryName())
 			);
 			
 			logger.info("Items Registered");
@@ -97,17 +109,19 @@ public class ThriveCraft
 			event.getRegistry().registerAll
 			(
 					//Onyx Blocks
-					BlockList.onyx_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0f, 15.0f).lightValue(0).sound(SoundType.METAL)).setRegistryName(location("onyx_block")),
+					BlockList.onyx_block = new Onyx_Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0f, 15.0f).lightValue(0).sound(SoundType.METAL)).setRegistryName(location("onyx_block")),
 					BlockList.onyx_ore = new Onyx_Ore(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0f, 15.0f).lightValue(0).sound(SoundType.STONE)).setRegistryName(location("onyx_ore")),
 					
 					//Petrified Blocks
-					BlockList.stripped_petrified_log = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("stripped_petrified_log")),
-					BlockList.stripped_petrified_bark = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("stripped_petrified_bark")),
-					BlockList.petrified_log = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_log")),
-					BlockList.petrified_bark = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_bark")),
-					BlockList.petrified_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_planks")),
-					BlockList.petrified_sapling = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.0f, 1.0f).lightValue(0).sound(SoundType.PLANT)).setRegistryName(location("petrified_sapling")),
-					BlockList.petrified_door = new Petrified_Door(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).variableOpacity().sound(SoundType.WOOD)).setRegistryName(location("petrified_door"))
+					BlockList.stripped_petrified_log = new Stripped_Petrified_Log(MaterialColor.ADOBE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("stripped_petrified_log")),
+					BlockList.stripped_petrified_bark = new Stripped_Petrified_Bark(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("stripped_petrified_bark")),
+					BlockList.petrified_log = new Petrified_Log(MaterialColor.ADOBE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_log")),
+					BlockList.petrified_bark = new Petrified_Bark(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_bark")),
+					BlockList.petrified_planks = new Petrified_Planks(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_planks")),
+					BlockList.petrified_sapling = new Petrified_Sapling(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.0f, 1.0f).lightValue(0).sound(SoundType.PLANT)).setRegistryName(location("petrified_sapling")),
+					BlockList.petrified_door = new Petrified_Door(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).variableOpacity().sound(SoundType.WOOD)).setRegistryName(location("petrified_door")),
+					BlockList.petrified_slab = new Petrified_Slab(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).variableOpacity().sound(SoundType.WOOD)).setRegistryName(location("petrified_slab"))
+					//BlockList.petrified_stairs = new Petrified_Stairs(Petrified_Planks., Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).variableOpacity().sound(SoundType.WOOD)).setRegistryName(location("petrified_stairs"))
 			);
 			
 			logger.info("Blocks Registered");
