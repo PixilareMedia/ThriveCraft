@@ -14,4 +14,6 @@ public class BlockList
 	public static Block petrified_log;
 	public static Block petrified_bark;
 	public static Block petrified_planks;
+	public static Block petrified_door;
+	public static Block petrified_sapling;
 }
