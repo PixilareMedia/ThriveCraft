@@ -18,4 +18,8 @@ public class BlockList
 	public static Block petrified_sapling;
 	public static Block petrified_slab;
 	public static Block petrified_stairs;
+	public static Block petrified_leaves;
+	public static Block petrified_fence;
+	public static Block petrified_fence_gate;
+	public static Block petrified_trapdoor;
 }

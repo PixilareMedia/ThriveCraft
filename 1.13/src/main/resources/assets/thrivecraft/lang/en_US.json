@@ -26,6 +26,10 @@
 	"block.thrivecraft.petrified_door": "Petrified Door",
 	"block.thrivecraft.petrified_slab":"Petrified Slab",
 	"block.thrivecraft.petrified_stairs":"Petrified Stairs",
+	"block.thrivecraft.petrified_leaves": "Petrified Leaves",
+	"block.thrivecraft.petrified_fence": "Petrified Fence",
+	"block.thrivecraft.petrified_fence_gate": "Petrified Fence Gate",
+	"block.thrivecraft.petrified_trapdoor": "Petrified Trapdoor",
 	
 	//Guis
 	//Creative

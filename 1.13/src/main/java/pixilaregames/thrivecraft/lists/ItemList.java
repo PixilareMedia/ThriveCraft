@@ -31,4 +31,8 @@ public class ItemList
 	public static Item petrified_sapling;
 	public static Item petrified_slab;
 	public static Item petrified_stairs;
+	public static Item petrified_leaves;
+	public static Item petrified_fence;
+	public static Item petrified_fence_gate;
+	public static Item petrified_trapdoor;
 }

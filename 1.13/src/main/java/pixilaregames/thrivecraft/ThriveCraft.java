@@ -23,11 +23,15 @@ import pixilaregames.thrivecraft.blocks.onyx.Onyx_Block;
 import pixilaregames.thrivecraft.blocks.onyx.Onyx_Ore;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Bark;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Door;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Fence;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Fence_Gate;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Leaves;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Log;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Planks;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Sapling;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Slab;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Stairs;
+import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Trapdoor;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Bark;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Log;
 import pixilaregames.thrivecraft.itemgroups.ThriveCraftItemGroup;
@@ -99,7 +103,11 @@ public class ThriveCraft
 					ItemList.petrified_sapling = new ItemBlock(BlockList.petrified_sapling, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_sapling.getRegistryName()),
 					ItemList.petrified_door = new ItemBlock(BlockList.petrified_door, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_door.getRegistryName()),
 					ItemList.petrified_slab = new ItemBlock(BlockList.petrified_slab, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_slab.getRegistryName()),
-					ItemList.petrified_stairs = new ItemBlock(BlockList.petrified_stairs, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_stairs.getRegistryName())
+					ItemList.petrified_stairs = new ItemBlock(BlockList.petrified_stairs, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_stairs.getRegistryName()),
+					ItemList.petrified_leaves = new ItemBlock(BlockList.petrified_leaves, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_leaves.getRegistryName()),
+					ItemList.petrified_fence = new ItemBlock(BlockList.petrified_fence, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_fence.getRegistryName()),
+					ItemList.petrified_fence_gate = new ItemBlock(BlockList.petrified_fence_gate, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_fence_gate.getRegistryName()),
+					ItemList.petrified_trapdoor = new ItemBlock(BlockList.petrified_trapdoor, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_trapdoor.getRegistryName())
 			);
 			
 			logger.info("Items Registered");
@@ -122,7 +130,11 @@ public class ThriveCraft
 					BlockList.petrified_sapling = new Petrified_Sapling(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.0f, 1.0f).lightValue(0).sound(SoundType.PLANT)).setRegistryName(location("petrified_sapling")),
 					BlockList.petrified_door = new Petrified_Door(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).variableOpacity().sound(SoundType.WOOD)).setRegistryName(location("petrified_door")),
 					BlockList.petrified_slab = new Petrified_Slab(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).variableOpacity().sound(SoundType.WOOD)).setRegistryName(location("petrified_slab")),
-					BlockList.petrified_stairs = new Petrified_Stairs(BlockList.petrified_planks.getDefaultState(), Block.Properties.from(BlockList.petrified_planks)).setRegistryName(location("petrified_stairs"))
+					BlockList.petrified_stairs = new Petrified_Stairs(BlockList.petrified_planks.getDefaultState(), Block.Properties.from(BlockList.petrified_planks)).setRegistryName(location("petrified_stairs")),
+					BlockList.petrified_leaves = new Petrified_Leaves(Properties.create(Material.LEAVES).hardnessAndResistance(1.0f, 1.0f).lightValue(0).sound(SoundType.PLANT)).setRegistryName(location("petrified_leaves")),
+					BlockList.petrified_fence = new Petrified_Fence(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_fence")),
+					BlockList.petrified_fence_gate = new Petrified_Fence_Gate(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_fence_gate")),
+					BlockList.petrified_trapdoor = new Petrified_Trapdoor(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_trapdoor"))
 			);
 			
 			logger.info("Blocks Registered");
