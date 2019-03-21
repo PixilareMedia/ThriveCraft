@@ -37,6 +37,11 @@ import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Trapdoor;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Bark;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Log;
 import pixilaregames.thrivecraft.itemgroups.ThriveCraftItemGroup;
+import pixilaregames.thrivecraft.items.dracula.Dracula_Fang;
+import pixilaregames.thrivecraft.items.dracula.Dracula_Membrane;
+import pixilaregames.thrivecraft.items.dracula.Dracula_Wing;
+import pixilaregames.thrivecraft.items.dracula.Toothy_Cap;
+import pixilaregames.thrivecraft.items.mobs.spider.Spider_Leg;
 import pixilaregames.thrivecraft.items.onyx.Onyx_Gem;
 import pixilaregames.thrivecraft.lists.BlockList;
 import pixilaregames.thrivecraft.lists.ItemList;
@@ -98,14 +103,14 @@ public class ThriveCraft
 					//Petrified Cave Mob Stuff
 					//Dracula Stuff
 					//Items
-					ItemList.dracula_fang = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_fang")),
-					ItemList.dracula_membrane = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_membrane")),
-					ItemList.dracula_wing = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_wing")),
+					ItemList.dracula_fang = new Dracula_Fang(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_fang")),
+					ItemList.dracula_membrane = new Dracula_Membrane(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_membrane")),
+					ItemList.dracula_wing = new Dracula_Wing(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_wing")),
 					ItemList.dracula_elytra = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_elytra")),
-					ItemList.toothy_cap = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
+					ItemList.toothy_cap = new Toothy_Cap(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
 					//Spider Stuff
 					//Items
-					ItemList.spider_leg = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("spider_leg")),
+					ItemList.spider_leg = new Spider_Leg(new Item.Properties().group(thrivecraft)).setRegistryName(location("spider_leg")),
 					
 					//Petrified Wood Stuff
 					//Blocks
