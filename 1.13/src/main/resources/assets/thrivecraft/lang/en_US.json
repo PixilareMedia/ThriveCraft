@@ -15,7 +15,19 @@
 	"block.thrivecraft.onyx_block": "Onyx Block",
 	"block.thrivecraft.onyx_ore": "Onyx Ore",
 	
-	//Petrified Stuff
+	//Petrified Cave Mob Stuff
+	//Dracula Stuff
+	//Items
+	"item.thrivecraft.dracula_fang": "Dracula Fang",
+	"item.thrivecraft.dracula_wing": "Dracula Wing",
+	"item.thrivecraft.dracula_elytra": "Dracula Elytra",
+	"item.thrivecraft.dracula_membrane": "Dracula Membrane",
+	"item.thrivecraft.toothy_cap": "Toothy Cap",
+	//Spider Stuff
+	//Items
+	"item.thrivecraft.spider_leg": "Spider Leg",
+	
+	//Petrified Wood Stuff
 	//Blocks
 	"block.thrivecraft.stripped_petrified_log": "Stripped Petrified Log",
 	"block.thrivecraft.stripped_petrified_bark": "Stripped Petrified Bark",

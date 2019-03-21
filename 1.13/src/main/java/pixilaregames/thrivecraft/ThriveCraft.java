@@ -95,7 +95,19 @@ public class ThriveCraft
 					ItemList.onyx_block = new ItemBlock(BlockList.onyx_block, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.onyx_block.getRegistryName()),
 					ItemList.onyx_ore = new ItemBlock(BlockList.onyx_ore, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.onyx_ore.getRegistryName()),
 					
-					//Petrified Stuff
+					//Petrified Cave Mob Stuff
+					//Dracula Stuff
+					//Items
+					ItemList.dracula_fang = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_fang")),
+					ItemList.dracula_membrane = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_membrane")),
+					ItemList.dracula_wing = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_wing")),
+					ItemList.dracula_elytra = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_elytra")),
+					ItemList.toothy_cap = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
+					//Spider Stuff
+					//Items
+					ItemList.spider_leg = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("spider_leg")),
+					
+					//Petrified Wood Stuff
 					//Blocks
 					ItemList.stripped_petrified_log = new ItemBlock(BlockList.stripped_petrified_log, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.stripped_petrified_log.getRegistryName()),
 					ItemList.stripped_petrified_bark = new ItemBlock(BlockList.stripped_petrified_bark, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.stripped_petrified_bark.getRegistryName()),
@@ -125,7 +137,7 @@ public class ThriveCraft
 					BlockList.onyx_block = new Onyx_Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0f, 15.0f).lightValue(0).sound(SoundType.METAL)).setRegistryName(location("onyx_block")),
 					BlockList.onyx_ore = new Onyx_Ore(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0f, 15.0f).lightValue(0).sound(SoundType.STONE)).setRegistryName(location("onyx_ore")),
 					
-					//Petrified Blocks
+					//Petrified Wood Blocks
 					BlockList.stripped_petrified_log = new Stripped_Petrified_Log(MaterialColor.ADOBE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("stripped_petrified_log")),
 					BlockList.stripped_petrified_bark = new Stripped_Petrified_Bark(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("stripped_petrified_bark")),
 					BlockList.petrified_log = new Petrified_Log(MaterialColor.ADOBE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_log")),

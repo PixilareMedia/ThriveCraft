@@ -20,7 +20,19 @@ public class ItemList
 	public static Item onyx_block;
 	public static Item onyx_ore;
 	
-	//Petrified Stuff
+	//Petrified Cave Mob Stuff
+	//Dracula Stuff
+	//Items
+	public static Item dracula_fang;
+	public static Item dracula_membrane;
+	public static Item dracula_wing;
+	public static Item dracula_elytra;
+	public static Item toothy_cap;
+	//Spider
+	//Items
+	public static Item spider_leg;
+	
+	//Petrified Wood Stuff
 	//Blocks
 	public static Item stripped_petrified_log;
 	public static Item stripped_petrified_bark;
