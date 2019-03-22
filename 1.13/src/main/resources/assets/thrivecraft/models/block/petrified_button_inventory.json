@@ -2,6 +2,6 @@
     "parent": "block/button_inventory",
     "textures":
     {
-        "all": "thrivecraft:block/petrified_planks"
+        "texture": "thrivecraft:block/petrified_planks" 
     }
 }

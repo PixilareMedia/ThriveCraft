@@ -5,10 +5,9 @@ loaderVersion="[24,)"
 	modId="thrivecraft"
 	version="0.1"
 	displayName="Thrive Craft"
-	credits="Herobrain_gamer For Coding, GamerGabriel For Textures, TheTrueDuility For Slave Driving Asshole"
+	credits="Herobrain_gamer For Coding, GamerGabriel For Textures, TheTrueDuility For Ideas AKA The Slave Owner"
 	authors="Herobrain_gamer, GamerGabriel, TheTrueDuility"
-	description='''
-	'''
+	description='''Ian Please Add More Information'''
 
 [[dependencies.thrivecraft]]
     modId="forge" #mandatory

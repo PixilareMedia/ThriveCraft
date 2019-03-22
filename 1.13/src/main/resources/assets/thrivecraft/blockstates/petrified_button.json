@@ -1,5 +1,6 @@
 {
-    "variants": {
+    "variants":
+    {
         "face=floor,facing=east,powered=false":  { "model": "thrivecraft:block/petrified_button", "y": 90 },
         "face=floor,facing=west,powered=false":  { "model": "thrivecraft:block/petrified_button", "y": 270 },
         "face=floor,facing=south,powered=false": { "model": "thrivecraft:block/petrified_button", "y": 180 },

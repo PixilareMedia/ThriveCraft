@@ -3,11 +3,14 @@ package pixilaregames.thrivecraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.mojang.brigadier.CommandDispatcher;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.Block.Properties;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.command.CommandSource;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemGroup;
@@ -18,6 +21,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import pixilaregames.thrivecraft.blocks.onyx.Onyx_Block;
 import pixilaregames.thrivecraft.blocks.onyx.Onyx_Ore;
@@ -36,6 +40,7 @@ import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Stairs;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Petrified_Trapdoor;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Bark;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Log;
+import pixilaregames.thrivecraft.commands.CmdGamemode;
 import pixilaregames.thrivecraft.itemgroups.ThriveCraftItemGroup;
 import pixilaregames.thrivecraft.items.dracula.Dracula_Fang;
 import pixilaregames.thrivecraft.items.dracula.Dracula_Membrane;
@@ -166,6 +171,12 @@ public class ThriveCraft
 		private static ResourceLocation location(String name)
 		{
 			return new ResourceLocation(modid, name);
+		}
+		
+		public void serverStarting(FMLServerStartingEvent event)
+		{
+			final CommandDispatcher<CommandSource> dp = event.getCommandDispatcher();
+			CmdGamemode.register(dp);
 		}
 	}
 }
