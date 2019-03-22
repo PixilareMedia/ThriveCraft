@@ -69,6 +69,7 @@ public class ThriveCraft
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegisteries);
 		
 		MinecraftForge.EVENT_BUS.register(this);
+		MinecraftForge.EVENT_BUS.addListener(this::serverStarting);
 	}
 	
 	private void setup(final FMLCommonSetupEvent event)
@@ -81,9 +82,16 @@ public class ThriveCraft
 		logger.info("Client registeries method registered");
 	}
 	
+	public void serverStarting(FMLServerStartingEvent evt)
+	{
+		final CommandDispatcher<CommandSource> dp = evt.getCommandDispatcher();
+		CmdGamemode.register(dp);
+	}
+	
 	@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 	public static class RegsitryEvents
 	{
+		
 		@SubscribeEvent
 		public static void registerItems(final Register<Item> event)
 		{
@@ -173,10 +181,5 @@ public class ThriveCraft
 			return new ResourceLocation(modid, name);
 		}
 		
-		public void serverStarting(FMLServerStartingEvent event)
-		{
-			final CommandDispatcher<CommandSource> dp = event.getCommandDispatcher();
-			CmdGamemode.register(dp);
-		}
 	}
 }

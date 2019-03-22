@@ -66,7 +66,8 @@ public class CmdGamemode
 		})));
 	}
 	
-	private static LiteralArgumentBuilder<CommandSource> build(LiteralArgumentBuilder<CommandSource> builder) {
+	private static LiteralArgumentBuilder<CommandSource> build(LiteralArgumentBuilder<CommandSource> builder)
+	{
 		GameType[] types = GameType.values();
 		for(int i=0;i<types.length;i++) {
 			final GameType gametype = types[i];
@@ -121,7 +122,7 @@ public class CmdGamemode
 				player.sendMessage(new TextComponentTranslation("gameMode.changed", itextcomponent));
 			}
 		}
-		source.sendFeedback(new TextComponentTranslation("commands.gamemode.success.other", player.getDisplayName(), itextcomponent), true);
+		//source.sendFeedback(new TextComponentTranslation("commands.gamemode.success.other", player.getDisplayName(), itextcomponent), true);
 	}
 	
 	private static int setGameMode(CommandContext<CommandSource> source, Collection<EntityPlayerMP> players, GameType gameTypeIn)

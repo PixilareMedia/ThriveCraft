@@ -13,3 +13,13 @@ How to get forge 1.13.2 to load in eclipse
 11. click directory choose the forge mdk folder then click finsh
 
 side note if the run button in elcipse does not work use the runClient.bat
+
+side note if you want to use your own MC account follow this
+01. open the dropdown arrow by the run button
+02. select runConfiguration
+03. go to the Arguments tab
+04. add in Program arguments --username ForgeDev@MinecraftForge.net --password 12345IsABadPassword
+(replace ForgeDev@MinecraftForge.net with your Email & 12345IsABadPassword with your password)
+05. hit apply
+06. hit run
+07. go into a world and see if you now show up as you
