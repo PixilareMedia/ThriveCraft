@@ -1,5 +1,7 @@
 package pixilaregames.thrivecraft;
 
+import java.util.stream.Collectors;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,9 +20,12 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
+import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import pixilaregames.thrivecraft.blocks.onyx.Onyx_Block;
@@ -82,6 +87,16 @@ public class ThriveCraft
 		logger.info("Client registeries method registered");
 	}
 	
+	public void enqueueIMC(final InterModEnqueueEvent evnet)
+	{
+		InterModComms.sendTo("pixelcore", "Hello World", () -> {logger.info("Hello from ThriveCraft"); return "Hello Worlds";});
+	}
+	
+	public void processIMC(final InterModProcessEvent event)
+	{
+		logger.info("Got IMC {}", event.getIMCStream().map(m->m.getMessageSupplier().get()).collect(Collectors.toList()));
+	}
+	
 	public void serverStarting(FMLServerStartingEvent evt)
 	{
 		final CommandDispatcher<CommandSource> dp = evt.getCommandDispatcher();
@@ -95,6 +110,7 @@ public class ThriveCraft
 		@SubscribeEvent
 		public static void registerItems(final Register<Item> event)
 		{
+			
 			event.getRegistry().registerAll
 			(
 					//Onyx Stuff

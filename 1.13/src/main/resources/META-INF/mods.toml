@@ -10,15 +10,22 @@ loaderVersion="[24,)"
 	description='''Ian Please Add More Information'''
 
 [[dependencies.thrivecraft]]
-    modId="forge" #mandatory
-    mandatory=true #mandatory
+    modId="forge"
+    mandatory=true
     versionRange="[24,)"
     ordering="NONE"
     side="BOTH"
-	
+    
 [[dependencies.thrivecraft]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.13.2]"
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.thrivecraft]]
+    modId="pixelcore"
+    mandatory=false
+    versionRange="[1.0]"
     ordering="NONE"
     side="BOTH"
