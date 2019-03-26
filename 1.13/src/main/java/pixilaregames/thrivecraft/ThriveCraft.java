@@ -55,7 +55,6 @@ import pixilaregames.thrivecraft.items.base.ItemSwordBase;
 import pixilaregames.thrivecraft.items.dracula.Dracula_Fang;
 import pixilaregames.thrivecraft.items.dracula.Dracula_Membrane;
 import pixilaregames.thrivecraft.items.dracula.Dracula_Wing;
-import pixilaregames.thrivecraft.items.dracula.Toothy_Cap;
 import pixilaregames.thrivecraft.items.mobs.spider.Spider_Leg;
 import pixilaregames.thrivecraft.items.onyx.Onyx_Gem;
 import pixilaregames.thrivecraft.lists.BlockList;
@@ -151,7 +150,10 @@ public class ThriveCraft
 					ItemList.toothry_hoe = new ItemHoeBase(ToolMaterialList.toothy, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_hoe")),
 					//Armor
 					ItemList.dracula_elytra = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_elytra")),
-					ItemList.toothy_cap = new Toothy_Cap(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
+					ItemList.toothy_cap = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
+					ItemList.toothy_chestplate = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_chestplate")),
+					ItemList.toothy_pants = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_pants")),
+					ItemList.toothy_boots = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_boots")),
 					//Spider Stuff
 					//Items
 					ItemList.spider_leg = new Spider_Leg(new Item.Properties().group(thrivecraft)).setRegistryName(location("spider_leg")),

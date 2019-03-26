@@ -37,6 +37,9 @@ public class ItemList
 	//Armor
 	public static Item dracula_elytra;
 	public static Item toothy_cap;
+	public static Item toothy_chestplate;
+	public static Item toothy_pants;
+	public static Item toothy_boots;
 	//Spider
 	//Items
 	public static Item spider_leg;
