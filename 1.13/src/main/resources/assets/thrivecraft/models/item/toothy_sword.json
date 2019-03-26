@@ -2,6 +2,6 @@
     "parent": "item/handheld",
     "textures":
     {
-        "layer0": "thrivecraft:item/onyx_hoe"
+        "layer0": "thrivecraft:item/toothy_sword"
     }
 }

@@ -7,11 +7,13 @@ public class ItemList
 	//Onyx Stuff
 	//Items
 	public static Item onyx_gem;
+	//Tools
 	public static Item onyx_sword;
 	public static Item onyx_axe;
 	public static Item onyx_pickaxe;
 	public static Item onyx_shovel;
 	public static Item onyx_hoe;
+	//Armor
 	public static Item onyx_helmet;
 	public static Item onyx_chestplate;
 	public static Item onyx_leggings;
@@ -26,6 +28,13 @@ public class ItemList
 	public static Item dracula_fang;
 	public static Item dracula_membrane;
 	public static Item dracula_wing;
+	//Tools
+	public static Item toothy_sword;
+	public static Item toothy_axe;
+	public static Item toothy_pickaxe;
+	public static Item toothy_shovel;
+	public static Item toothry_hoe;
+	//Armor
 	public static Item dracula_elytra;
 	public static Item toothy_cap;
 	//Spider

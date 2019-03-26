@@ -3,7 +3,7 @@ loaderVersion="[24,)"
 
 [[mods]] #mandatory
 	modId="thrivecraft"
-	version="0.1"
+	version="1.0"
 	displayName="Thrive Craft"
 	credits="Herobrain_gamer For Coding, GamerGabriel For Textures, TheTrueDuility For Ideas AKA The Slave Owner"
 	authors="Herobrain_gamer, GamerGabriel, TheTrueDuility"

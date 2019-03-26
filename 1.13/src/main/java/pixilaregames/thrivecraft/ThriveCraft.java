@@ -47,6 +47,11 @@ import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Bark;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Log;
 import pixilaregames.thrivecraft.commands.CmdGamemode;
 import pixilaregames.thrivecraft.itemgroups.ThriveCraftItemGroup;
+import pixilaregames.thrivecraft.items.base.ItemAxeBase;
+import pixilaregames.thrivecraft.items.base.ItemHoeBase;
+import pixilaregames.thrivecraft.items.base.ItemPickaxeBase;
+import pixilaregames.thrivecraft.items.base.ItemShovelBase;
+import pixilaregames.thrivecraft.items.base.ItemSwordBase;
 import pixilaregames.thrivecraft.items.dracula.Dracula_Fang;
 import pixilaregames.thrivecraft.items.dracula.Dracula_Membrane;
 import pixilaregames.thrivecraft.items.dracula.Dracula_Wing;
@@ -55,6 +60,7 @@ import pixilaregames.thrivecraft.items.mobs.spider.Spider_Leg;
 import pixilaregames.thrivecraft.items.onyx.Onyx_Gem;
 import pixilaregames.thrivecraft.lists.BlockList;
 import pixilaregames.thrivecraft.lists.ItemList;
+import pixilaregames.thrivecraft.lists.ToolMaterialList;
 
 @Mod("thrivecraft")
 public class ThriveCraft
@@ -116,11 +122,13 @@ public class ThriveCraft
 					//Onyx Stuff
 					//Items
 					ItemList.onyx_gem = new Onyx_Gem(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_gem")),
-					ItemList.onyx_sword = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_sword")),
-					ItemList.onyx_axe = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_axe")),
-					ItemList.onyx_pickaxe = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_pickaxe")),
-					ItemList.onyx_shovel = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_shovel")),
-					ItemList.onyx_hoe = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_hoe")),
+					//Tools
+					ItemList.onyx_sword = new ItemSwordBase(ToolMaterialList.onyx, 0, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_sword")),
+					ItemList.onyx_axe = new ItemAxeBase(ToolMaterialList.onyx, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_axe")),
+					ItemList.onyx_pickaxe = new ItemPickaxeBase(ToolMaterialList.onyx, -2, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_pickaxe")),
+					ItemList.onyx_shovel = new ItemShovelBase(ToolMaterialList.onyx, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_shovel")),
+					ItemList.onyx_hoe = new ItemHoeBase(ToolMaterialList.onyx, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_hoe")),
+					//Armor
 					ItemList.onyx_helmet = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_helmet")),
 					ItemList.onyx_chestplate = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_chestplate")),
 					ItemList.onyx_leggings = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_leggings")),
@@ -135,6 +143,13 @@ public class ThriveCraft
 					ItemList.dracula_fang = new Dracula_Fang(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_fang")),
 					ItemList.dracula_membrane = new Dracula_Membrane(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_membrane")),
 					ItemList.dracula_wing = new Dracula_Wing(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_wing")),
+					//Tools
+					ItemList.toothy_sword = new ItemSwordBase(ToolMaterialList.toothy, 0, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_sword")),
+					ItemList.toothy_axe = new ItemAxeBase(ToolMaterialList.toothy, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_axe")),
+					ItemList.toothy_pickaxe = new ItemPickaxeBase(ToolMaterialList.toothy, -2, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_pickaxe")),
+					ItemList.toothy_shovel = new ItemShovelBase(ToolMaterialList.toothy, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_shovel")),
+					ItemList.toothry_hoe = new ItemHoeBase(ToolMaterialList.toothy, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_hoe")),
+					//Armor
 					ItemList.dracula_elytra = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_elytra")),
 					ItemList.toothy_cap = new Toothy_Cap(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
 					//Spider Stuff
