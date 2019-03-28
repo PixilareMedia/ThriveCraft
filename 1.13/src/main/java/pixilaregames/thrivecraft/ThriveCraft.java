@@ -13,6 +13,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.command.CommandSource;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemGroup;
@@ -47,6 +48,7 @@ import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Bark;
 import pixilaregames.thrivecraft.blocks.petrifiedwood.Stripped_Petrified_Log;
 import pixilaregames.thrivecraft.commands.CmdGamemode;
 import pixilaregames.thrivecraft.itemgroups.ThriveCraftItemGroup;
+import pixilaregames.thrivecraft.items.base.ItemArmorBase;
 import pixilaregames.thrivecraft.items.base.ItemAxeBase;
 import pixilaregames.thrivecraft.items.base.ItemHoeBase;
 import pixilaregames.thrivecraft.items.base.ItemPickaxeBase;
@@ -57,6 +59,7 @@ import pixilaregames.thrivecraft.items.dracula.Dracula_Membrane;
 import pixilaregames.thrivecraft.items.dracula.Dracula_Wing;
 import pixilaregames.thrivecraft.items.mobs.spider.Spider_Leg;
 import pixilaregames.thrivecraft.items.onyx.Onyx_Gem;
+import pixilaregames.thrivecraft.lists.ArmorMaterialList;
 import pixilaregames.thrivecraft.lists.BlockList;
 import pixilaregames.thrivecraft.lists.ItemList;
 import pixilaregames.thrivecraft.lists.ToolMaterialList;
@@ -128,10 +131,10 @@ public class ThriveCraft
 					ItemList.onyx_shovel = new ItemShovelBase(ToolMaterialList.onyx, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_shovel")),
 					ItemList.onyx_hoe = new ItemHoeBase(ToolMaterialList.onyx, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_hoe")),
 					//Armor
-					ItemList.onyx_helmet = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_helmet")),
-					ItemList.onyx_chestplate = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_chestplate")),
-					ItemList.onyx_leggings = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_leggings")),
-					ItemList.onyx_boots = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_boots")),
+					ItemList.onyx_helmet = new ItemArmorBase(ArmorMaterialList.Onyx, EntityEquipmentSlot.HEAD, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_helmet")),
+					ItemList.onyx_chestplate = new ItemArmorBase(ArmorMaterialList.Onyx, EntityEquipmentSlot.CHEST, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_chestplate")),
+					ItemList.onyx_leggings = new ItemArmorBase(ArmorMaterialList.Onyx, EntityEquipmentSlot.LEGS, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_leggings")),
+					ItemList.onyx_boots = new ItemArmorBase(ArmorMaterialList.Onyx, EntityEquipmentSlot.FEET, new Item.Properties().group(thrivecraft)).setRegistryName(location("onyx_boots")),
 					//Blocks
 					ItemList.onyx_block = new ItemBlock(BlockList.onyx_block, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.onyx_block.getRegistryName()),
 					ItemList.onyx_ore = new ItemBlock(BlockList.onyx_ore, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.onyx_ore.getRegistryName()),
@@ -150,10 +153,10 @@ public class ThriveCraft
 					ItemList.toothry_hoe = new ItemHoeBase(ToolMaterialList.toothy, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_hoe")),
 					//Armor
 					ItemList.dracula_elytra = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_elytra")),
-					ItemList.toothy_cap = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
-					ItemList.toothy_chestplate = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_chestplate")),
-					ItemList.toothy_pants = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_pants")),
-					ItemList.toothy_boots = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_boots")),
+					ItemList.toothy_cap = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.HEAD, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
+					ItemList.toothy_chestplate = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.CHEST, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_chestplate")),
+					ItemList.toothy_pants = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.LEGS, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_pants")),
+					ItemList.toothy_boots = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.FEET, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_boots")),
 					//Spider Stuff
 					//Items
 					ItemList.spider_leg = new Spider_Leg(new Item.Properties().group(thrivecraft)).setRegistryName(location("spider_leg")),
