@@ -1,8 +1,8 @@
-package pixilaregames.thrivecraft.itemgroups;
+package pixilaregames.thrivecraft.ItemGroups;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import pixilaregames.thrivecraft.lists.ItemList;
+import pixilaregames.thrivecraft.Lists.ItemList;
 
 public class ThriveCraftItemGroup extends ItemGroup
 {

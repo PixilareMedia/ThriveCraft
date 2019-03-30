@@ -1,4 +1,4 @@
-package pixilaregames.thrivecraft.lists;
+package pixilaregames.thrivecraft.Lists;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;

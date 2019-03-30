@@ -1,4 +1,4 @@
-package pixilaregames.thrivecraft.blocks.onyx;
+package pixilaregames.thrivecraft.Blocks.Onyx;
 
 import java.util.Random;
 
@@ -6,8 +6,8 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import pixilaregames.thrivecraft.blocks.base.BlockOreBase;
-import pixilaregames.thrivecraft.lists.ItemList;
+import pixilaregames.pixelcore.BlocksBase.BlockOreBase;
+import pixilaregames.thrivecraft.Lists.ItemList;
 
 public class Onyx_Ore extends BlockOreBase
 {

@@ -1,7 +1,7 @@
-package pixilaregames.thrivecraft.blocks.petrifiedwood;
+package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
 import net.minecraft.block.state.IBlockState;
-import pixilaregames.thrivecraft.blocks.base.BlockStairsBase;
+import pixilaregames.pixelcore.BlocksBase.BlockStairsBase;
 
 public class Petrified_Stairs extends BlockStairsBase
 {

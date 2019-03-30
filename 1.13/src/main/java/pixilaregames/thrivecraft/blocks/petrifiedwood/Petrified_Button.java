@@ -1,6 +1,6 @@
-package pixilaregames.thrivecraft.blocks.petrifiedwood;
+package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
-import pixilaregames.thrivecraft.blocks.base.BlockButtonWoodBase;
+import pixilaregames.pixelcore.BlocksBase.BlockButtonWoodBase;
 
 public class Petrified_Button extends BlockButtonWoodBase
 {

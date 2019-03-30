@@ -1,4 +1,4 @@
-package pixilaregames.thrivecraft.lists;
+package pixilaregames.thrivecraft.Lists;
 
 import java.util.function.Supplier;
 import net.minecraft.init.SoundEvents;

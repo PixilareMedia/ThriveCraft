@@ -1,7 +1,31 @@
-How to get forge 1.13.2 to load in eclipse
+UPDATEING FORGE MDK
+01. Download the forge mdk that is the latest
+02. Open it take all files/folders except the src folder and place them in your workspace
+03. Open CMD cd to your workspace folder
+04. Run "gradlew eclipse"
+05. Wait till done
+06. Run "gradlew genEclipseRuns"
+07. If you use your own account redo the USING YOUR OWN MC ACCOUNT instructions
+08. If you compile mods using the PixelCore mod redo setps 18-21 in the SETTING UP A FORGE MDK WORKSPACE
 
-01. get the version that is listed when this file is updated (forge-1.13.2-25.0.100)
-02. open the cmd and go to the directory that you want the mod enviorment in
+
+
+USING YOUR OWN MC ACCOUNT
+01. Open the dropdown arrow by the green run button
+02. Select "runConfiguration"
+03. Go to the "Arguments" tab
+04. Add in the "Program arguments" section "--username ForgeDev@MinecraftForge.net --password 12345IsABadPassword"
+(Replace ForgeDev@MinecraftForge.net with your Email & 12345IsABadPassword with your password)
+05. Hit apply
+06. Hit run
+07. Go into a world and see if you now show up as you now
+(If it does not work you may have spelled a part of your login wrong)
+
+
+
+SETTING UP A FORGE MDK WORKSPACE
+01. get the version that is listed when this file is updated (forge-1.13.2-25.0.102)
+02. open the cmd and go to the directory that you want the mod workspace in
 03. drop the forge mdk & the stuff from the respostory in there
 04. run "gradlew eclipse"
 05. wait until done
@@ -11,15 +35,14 @@ How to get forge 1.13.2 to load in eclipse
 09. lauch into eclipse
 10. go to File->OpenProjectsFromFileSystem
 11. click directory choose the forge mdk folder then click finsh
-
-side note if the run button in elcipse does not work use the runClient.bat
-
-side note if you want to use your own MC account follow this
-01. open the dropdown arrow by the run button
-02. select runConfiguration
-03. go to the Arguments tab
-04. add in Program arguments --username ForgeDev@MinecraftForge.net --password 12345IsABadPassword
-(replace ForgeDev@MinecraftForge.net with your Email & 12345IsABadPassword with your password)
-05. hit apply
-06. hit run
-07. go into a world and see if you now show up as you
+12. go to Project->Properties
+13. Find the "Java Build Path" option
+14. Look at the "Libraries" tab and click "Add External JARs..."
+15. Make sure you have PixelCore-Dev.jar downloaded and in a pace where you can find it
+16. Navigate to the PixelCore-Dev.jar and selcet it then hit open
+17. Now you may hit the "Apply and Close" button
+--Beyond Here In The SETTING UP A FORGE MDK WORKSPACE Is If You Are Going TO Compile A Mod That Uses The PixelCore Mod--
+18. Find The build.gradlew file in the workspace and open it in a text editor
+19. Go down to about line 74
+20. Go to the end of line 74 and push enter and add the following "compile files("You/File/Path/To/PixelCore-Dev.jar")"
+21. Save the build.gradlew and now you may compile mods useing the PixelCore mod

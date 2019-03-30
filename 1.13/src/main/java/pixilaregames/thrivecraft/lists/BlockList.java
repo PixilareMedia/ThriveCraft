@@ -1,4 +1,4 @@
-package pixilaregames.thrivecraft.lists;
+package pixilaregames.thrivecraft.Lists;
 
 import net.minecraft.block.Block;
 

@@ -1,6 +1,6 @@
-package pixilaregames.thrivecraft.blocks.petrifiedwood;
+package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
-import pixilaregames.thrivecraft.blocks.base.BlockLeavesBase;
+import pixilaregames.pixelcore.BlocksBase.BlockLeavesBase;
 
 public class Petrified_Leaves extends BlockLeavesBase
 {

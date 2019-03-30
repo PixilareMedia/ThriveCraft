@@ -1,6 +1,6 @@
-package pixilaregames.thrivecraft.blocks.onyx;
+package pixilaregames.thrivecraft.Blocks.Onyx;
 
-import pixilaregames.thrivecraft.blocks.base.BlockBase;
+import pixilaregames.pixelcore.BlocksBase.BlockBase;
 
 public class Onyx_Block extends BlockBase
 {

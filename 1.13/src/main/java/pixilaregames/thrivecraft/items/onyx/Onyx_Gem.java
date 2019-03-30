@@ -1,6 +1,6 @@
-package pixilaregames.thrivecraft.items.onyx;
+package pixilaregames.thrivecraft.Items.Onyx;
 
-import pixilaregames.thrivecraft.items.base.ItemBase;
+import pixilaregames.pixelcore.ItemsBase.ItemBase;
 
 public class Onyx_Gem extends ItemBase
 {

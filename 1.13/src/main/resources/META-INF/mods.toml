@@ -25,7 +25,7 @@ loaderVersion="[24,)"
     
 [[dependencies.thrivecraft]]
     modId="pixelcore"
-    mandatory=false
+    mandatory=true
     versionRange="[1.0]"
     ordering="NONE"
     side="BOTH"

@@ -1,7 +1,7 @@
-package pixilaregames.thrivecraft.blocks.petrifiedwood;
+package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
 import net.minecraft.block.material.MaterialColor;
-import pixilaregames.thrivecraft.blocks.base.BlockLogBase;
+import pixilaregames.pixelcore.BlocksBase.BlockLogBase;
 
 public class Petrified_Log extends BlockLogBase
 {
