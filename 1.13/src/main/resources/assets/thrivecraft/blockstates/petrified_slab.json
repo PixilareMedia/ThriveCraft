@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "thrivecraft:block/petrified_slab" },
-        "type=top": { "model": "thrivecraft:block/petrified_slab_top" },
-        "type=double": { "model": "thrivecraft:block/petrified_planks" }
-    }
-}
