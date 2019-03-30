@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "RR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:petrified_planks"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:petrified_pressure_plate",
+        "count": 1
+    }
+}

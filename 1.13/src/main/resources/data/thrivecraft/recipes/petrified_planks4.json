@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:petrified_log"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:petrified_planks",
+        "count": 4
+    }
+}
