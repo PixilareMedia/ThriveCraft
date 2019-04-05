@@ -30,7 +30,7 @@ USING YOUR OWN MC ACCOUNT
 
 
 SETTING UP A FORGE MDK WORKSPACE
-01. get the version that is listed when this file is updated (forge-1.13.2-25.0.102)
+01. get the version that is listed when this file is updated (forge-1.13.2-25.0.107)
 02. open the cmd and go to the directory that you want the mod workspace in
 03. drop the forge mdk & the stuff from the respostory in there
 04. run "gradlew eclipse"
