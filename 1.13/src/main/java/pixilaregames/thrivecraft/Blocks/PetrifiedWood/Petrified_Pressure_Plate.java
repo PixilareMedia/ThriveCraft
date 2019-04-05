@@ -1,6 +1,6 @@
 package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
-import pixilaregames.pixelcore.BlocksBase.BlockPressurePlateBase;
+import pixilaregames.pixelcore.API.BlocksBase.BlockPressurePlateBase;
 
 public class Petrified_Pressure_Plate extends BlockPressurePlateBase
 {

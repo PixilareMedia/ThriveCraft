@@ -1,6 +1,6 @@
 package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
-import pixilaregames.pixelcore.BlocksBase.BlockBase;
+import pixilaregames.pixelcore.API.BlocksBase.BlockBase;
 
 public class Stripped_Petrified_Bark extends BlockBase
 {

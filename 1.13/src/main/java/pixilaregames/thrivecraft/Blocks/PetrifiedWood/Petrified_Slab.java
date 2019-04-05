@@ -1,6 +1,6 @@
 package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
-import pixilaregames.pixelcore.BlocksBase.BlockSlabBase;
+import pixilaregames.pixelcore.API.BlocksBase.BlockSlabBase;
 
 public class Petrified_Slab extends BlockSlabBase
 {

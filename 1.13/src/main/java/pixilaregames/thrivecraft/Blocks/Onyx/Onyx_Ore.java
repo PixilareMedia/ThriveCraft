@@ -6,7 +6,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import pixilaregames.pixelcore.BlocksBase.BlockOreBase;
+import pixilaregames.pixelcore.API.BlocksBase.BlockOreBase;
 import pixilaregames.thrivecraft.Lists.ItemList;
 
 public class Onyx_Ore extends BlockOreBase

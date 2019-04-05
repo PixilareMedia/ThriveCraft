@@ -10,6 +10,7 @@ import net.minecraft.block.Block.Properties;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.client.Minecraft;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -49,18 +50,18 @@ import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Stairs;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Trapdoor;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Stripped_Petrified_Bark;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Stripped_Petrified_Log;
+import pixilaregames.thrivecraft.Config.ConfigManager;
 import pixilaregames.thrivecraft.Items.Dracula.Dracula_Fang;
 import pixilaregames.thrivecraft.Items.Dracula.Dracula_Membrane;
 import pixilaregames.thrivecraft.Items.Dracula.Dracula_Wing;
 import pixilaregames.thrivecraft.Items.Onyx.Onyx_Gem;
 import pixilaregames.thrivecraft.Items.Spider.Spider_Leg;
-import pixilaregames.pixelcore.PixelCore;
-import pixilaregames.pixelcore.ItemsBase.ItemArmorBase;
-import pixilaregames.pixelcore.ItemsBase.ItemAxeBase;
-import pixilaregames.pixelcore.ItemsBase.ItemHoeBase;
-import pixilaregames.pixelcore.ItemsBase.ItemPickaxeBase;
-import pixilaregames.pixelcore.ItemsBase.ItemShovelBase;
-import pixilaregames.pixelcore.ItemsBase.ItemSwordBase;
+import pixilaregames.pixelcore.API.ItemsBase.ItemArmorBase;
+import pixilaregames.pixelcore.API.ItemsBase.ItemAxeBase;
+import pixilaregames.pixelcore.API.ItemsBase.ItemHoeBase;
+import pixilaregames.pixelcore.API.ItemsBase.ItemPickaxeBase;
+import pixilaregames.pixelcore.API.ItemsBase.ItemShovelBase;
+import pixilaregames.pixelcore.API.ItemsBase.ItemSwordBase;
 
 @Mod("thrivecraft")
 public class ThriveCraft
@@ -91,6 +92,7 @@ public class ThriveCraft
 	
 	private void clientRegisteries(final FMLClientSetupEvent event)
 	{
+		ConfigManager.loadConfig(Minecraft.getInstance().gameDir);
 		logger.info("Client registeries method registered");
 	}
 	
@@ -138,9 +140,18 @@ public class ThriveCraft
 					ItemList.dracula_fang = new Dracula_Fang(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_fang")),
 					ItemList.dracula_membrane = new Dracula_Membrane(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_membrane")),
 					ItemList.dracula_wing = new Dracula_Wing(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_wing")),
+					//Tools
+					//ItemList.toothy_sword = new ItemSwordBase(ToolMaterialList.toothy, 0, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_sword")),
+					//ItemList.toothy_axe = new ItemAxeBase(ToolMaterialList.toothy, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_axe")),
+					ItemList.toothy_pickaxe = new ItemPickaxeBase(ToolMaterialList.toothy, -2, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_pickaxe")),
+					//ItemList.toothy_shovel = new ItemShovelBase(ToolMaterialList.toothy, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_shovel")),
+					//ItemList.toothry_hoe = new ItemHoeBase(ToolMaterialList.toothy, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_hoe")),
 					//Armor
 					ItemList.dracula_elytra = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_elytra")),
 					ItemList.toothy_cap = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.HEAD, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
+					//ItemList.toothy_chestplate = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.CHEST, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_chestplate")),
+					//ItemList.toothy_pants = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.LEGS, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_pants")),
+					//ItemList.toothy_boots = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.FEET, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_boots")),
 					//Spider Stuff
 					//Items
 					ItemList.spider_leg = new Spider_Leg(new Item.Properties().group(thrivecraft)).setRegistryName(location("spider_leg")),
@@ -163,25 +174,6 @@ public class ThriveCraft
 					ItemList.petrified_pressure_plate = new ItemBlock(BlockList.petrified_pressure_plate, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_pressure_plate.getRegistryName()),
 					ItemList.petrified_button = new ItemBlock(BlockList.petrified_button, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_button.getRegistryName())
 			);
-			
-			if (pixelcoreinstalled = ModList.get().isLoaded("pixelcore"))
-			{
-				event.getRegistry().registerAll
-				(
-						//Petrified Cave Mob Stuff
-						//Dracula Stuff
-						//Tools
-						ItemList.toothy_sword = new ItemSwordBase(ToolMaterialList.toothy, 0, 6.0f, new Item.Properties().group(PixelCore.wip)).setRegistryName(location("toothy_sword")),
-						ItemList.toothy_axe = new ItemAxeBase(ToolMaterialList.toothy, -1.0f, 6.0f, new Item.Properties().group(PixelCore.wip)).setRegistryName(location("toothy_axe")),
-						ItemList.toothy_pickaxe = new ItemPickaxeBase(ToolMaterialList.toothy, -2, 6.0f, new Item.Properties().group(PixelCore.wip)).setRegistryName(location("toothy_pickaxe")),
-						ItemList.toothy_shovel = new ItemShovelBase(ToolMaterialList.toothy, -1.0f, 6.0f, new Item.Properties().group(PixelCore.wip)).setRegistryName(location("toothy_shovel")),
-						ItemList.toothry_hoe = new ItemHoeBase(ToolMaterialList.toothy, 6.0f, new Item.Properties().group(PixelCore.wip)).setRegistryName(location("toothy_hoe")),
-						//Armor
-						ItemList.toothy_chestplate = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.CHEST, new Item.Properties().group(PixelCore.wip)).setRegistryName(location("toothy_chestplate")),
-						ItemList.toothy_pants = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.LEGS, new Item.Properties().group(PixelCore.wip)).setRegistryName(location("toothy_pants")),
-						ItemList.toothy_boots = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.FEET, new Item.Properties().group(PixelCore.wip)).setRegistryName(location("toothy_boots"))
-				);
-			}
 			
 			logger.info("Items Registered");
 		}

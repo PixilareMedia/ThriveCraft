@@ -1,6 +1,6 @@
 package pixilaregames.thrivecraft.Items.Dracula;
 
-import pixilaregames.pixelcore.ItemsBase.ItemBase;
+import pixilaregames.pixelcore.API.ItemsBase.ItemBase;
 
 public class Dracula_Membrane extends ItemBase
 {

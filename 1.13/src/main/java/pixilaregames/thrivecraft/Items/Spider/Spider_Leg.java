@@ -1,6 +1,6 @@
 package pixilaregames.thrivecraft.Items.Spider;
 
-import pixilaregames.pixelcore.ItemsBase.ItemBase;
+import pixilaregames.pixelcore.API.ItemsBase.ItemBase;
 
 public class Spider_Leg extends ItemBase
 {

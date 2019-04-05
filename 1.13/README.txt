@@ -1,3 +1,8 @@
+TERMS
+workspace = the folder where you have the mdk stored
+cmd = Command Prompt
+PixelCore-API is located at https://github.com/PixilareGames/PixelCore
+
 UPDATEING FORGE MDK
 01. Download the forge mdk that is the latest
 02. Open it take all files/folders except the src folder and place them in your workspace
@@ -5,8 +10,9 @@ UPDATEING FORGE MDK
 04. Run "gradlew eclipse"
 05. Wait till done
 06. Run "gradlew genEclipseRuns"
-07. If you use your own account redo the USING YOUR OWN MC ACCOUNT instructions
-08. If you compile mods using the PixelCore mod redo setps 18-21 in the SETTING UP A FORGE MDK WORKSPACE
+07. Repeat steps 12-17 in the SETTING UP A FORE MDK WORKSPACE
+08. If you use your own account redo the USING YOUR OWN MC ACCOUNT instructions
+09. If you compile mods using the PixelCore mod redo setps 18-21 in the SETTING UP A FORGE MDK WORKSPACE
 
 
 
@@ -38,11 +44,11 @@ SETTING UP A FORGE MDK WORKSPACE
 12. go to Project->Properties
 13. Find the "Java Build Path" option
 14. Look at the "Libraries" tab and click "Add External JARs..."
-15. Make sure you have PixelCore-Dev.jar downloaded and in a pace where you can find it
-16. Navigate to the PixelCore-Dev.jar and selcet it then hit open
+15. Make sure you have PixelCore-API.jar downloaded and in a pace where you can find it
+16. Navigate to the PixelCore-API.jar and selcet it then hit open
 17. Now you may hit the "Apply and Close" button
 --Beyond Here In The SETTING UP A FORGE MDK WORKSPACE Is If You Are Going TO Compile A Mod That Uses The PixelCore Mod--
 18. Find The build.gradlew file in the workspace and open it in a text editor
 19. Go down to about line 74
-20. Go to the end of line 74 and push enter and add the following "compile files("You/File/Path/To/PixelCore-Dev.jar")"
+20. Go to the end of line 74 and push enter and add the following "compile files("You/File/Path/To/PixelCore-API.jar")"
 21. Save the build.gradlew and now you may compile mods useing the PixelCore mod

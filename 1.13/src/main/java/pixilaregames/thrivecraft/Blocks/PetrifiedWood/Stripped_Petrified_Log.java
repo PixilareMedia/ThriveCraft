@@ -1,7 +1,7 @@
 package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
 import net.minecraft.block.material.MaterialColor;
-import pixilaregames.pixelcore.BlocksBase.BlockLogBase;
+import pixilaregames.pixelcore.API.BlocksBase.BlockLogBase;
 
 public class Stripped_Petrified_Log extends BlockLogBase
 {

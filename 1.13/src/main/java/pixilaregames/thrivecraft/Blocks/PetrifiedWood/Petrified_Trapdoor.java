@@ -1,6 +1,6 @@
 package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
-import pixilaregames.pixelcore.BlocksBase.BlockTrapDoorBase;
+import pixilaregames.pixelcore.API.BlocksBase.BlockTrapDoorBase;
 
 public class Petrified_Trapdoor extends BlockTrapDoorBase
 {

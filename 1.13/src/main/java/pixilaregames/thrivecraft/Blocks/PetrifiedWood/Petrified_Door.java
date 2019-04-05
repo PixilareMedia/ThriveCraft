@@ -1,6 +1,6 @@
 package pixilaregames.thrivecraft.Blocks.PetrifiedWood;
 
-import pixilaregames.pixelcore.BlocksBase.BlockDoorBase;
+import pixilaregames.pixelcore.API.BlocksBase.BlockDoorBase;
 
 public class Petrified_Door extends BlockDoorBase
 {
