@@ -18,8 +18,8 @@ public class ConfigManager
 		configDir.mkdirs();
 		Configuration config = loadConfig();
 		
-		enableToothyTools = setup(config, "general", "toothy_tools", false, "If set to true the Toothy Tools will be enabled");
-		enableToothyArmor = setup(config, "general", "toothy_armor", false, "If set to true the Toothy Armor will be enabled");
+		enableToothyTools = setup(config, "general", "toothy_tools", false, "If set to true the rest of the Toothy Tools will be enabled");
+		enableToothyArmor = setup(config, "general", "toothy_armor", false, "If set to true the rest of the Toothy Armor will be enabled");
 		
 		config.save();
 	}

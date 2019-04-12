@@ -21,7 +21,9 @@ import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -33,6 +35,7 @@ import pixilaregames.thrivecraft.Lists.ArmorMaterialList;
 import pixilaregames.thrivecraft.Lists.BlockList;
 import pixilaregames.thrivecraft.Lists.ItemList;
 import pixilaregames.thrivecraft.Lists.ToolMaterialList;
+import pixilaregames.thrivecraft.World.OreGeneration;
 import pixilaregames.thrivecraft.Blocks.Onyx.Onyx_Block;
 import pixilaregames.thrivecraft.Blocks.Onyx.Onyx_Ore;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Bark;
@@ -51,9 +54,11 @@ import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Trapdoor;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Stripped_Petrified_Bark;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Stripped_Petrified_Log;
 import pixilaregames.thrivecraft.Config.ConfigManager;
+import pixilaregames.thrivecraft.Config.ThriveCraftConfig;
 import pixilaregames.thrivecraft.Items.Dracula.Dracula_Fang;
 import pixilaregames.thrivecraft.Items.Dracula.Dracula_Membrane;
 import pixilaregames.thrivecraft.Items.Dracula.Dracula_Wing;
+import pixilaregames.thrivecraft.Items.Dracula.ItemDraculaElytra;
 import pixilaregames.thrivecraft.Items.Onyx.Onyx_Gem;
 import pixilaregames.thrivecraft.Items.Spider.Spider_Leg;
 import pixilaregames.pixelcore.API.ItemsBase.ItemArmorBase;
@@ -83,10 +88,13 @@ public class ThriveCraft
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegisteries);
 		
 		MinecraftForge.EVENT_BUS.register(this);
+		
+		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ThriveCraftConfig.generalSpec, "ThriveCraft.toml");
 	}
 	
 	private void setup(final FMLCommonSetupEvent event)
 	{
+		OreGeneration.setupOreGeneration();
 		logger.info("Setup method registered");
 	}
 	
@@ -147,7 +155,7 @@ public class ThriveCraft
 					//ItemList.toothy_shovel = new ItemShovelBase(ToolMaterialList.toothy, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_shovel")),
 					//ItemList.toothry_hoe = new ItemHoeBase(ToolMaterialList.toothy, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_hoe")),
 					//Armor
-					ItemList.dracula_elytra = new Item(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_elytra")),
+					ItemList.dracula_elytra = new ItemDraculaElytra(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_elytra")),
 					ItemList.toothy_cap = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.HEAD, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
 					//ItemList.toothy_chestplate = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.CHEST, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_chestplate")),
 					//ItemList.toothy_pants = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.LEGS, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_pants")),

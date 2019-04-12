@@ -20,7 +20,9 @@ public class ItemDraculaElytra extends ItemElytra
 	public ItemDraculaElytra(Properties builder)
 	{
 		super(builder);
-		this.addPropertyOverride(new ResourceLocation("broken"), (arg1, arg2, arg3) -> { return isUsable(arg1) ? 0.0f : 1.0f;});
+		this.addPropertyOverride(new ResourceLocation("broken"), (p_210312_0_, p_210312_1_, p_210312_2_) -> {
+	         return isUsable(p_210312_0_) ? 0.0F : 1.0F;
+	      });
 		BlockDispenser.registerDispenseBehavior(this, ItemArmor.DISPENSER_BEHAVIOR);
 	}
 	

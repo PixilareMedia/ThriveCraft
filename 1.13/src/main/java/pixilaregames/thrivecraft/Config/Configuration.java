@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("rawtypes")
 public class Configuration
 {
     public static final String FALLBACK_CATEGORY = "features";
@@ -89,7 +90,8 @@ public class Configuration
         return new Setting<>(type, value);
     }
 
-    <T> Setting<T> get(String category, String settingName, T defaultValue) {
+    @SuppressWarnings("unchecked")
+	<T> Setting<T> get(String category, String settingName, T defaultValue) {
         char type = getType(defaultValue);
         if (!settingsGroup.containsKey(category)) {
             settingsGroup.put(category, new HashMap<>());
