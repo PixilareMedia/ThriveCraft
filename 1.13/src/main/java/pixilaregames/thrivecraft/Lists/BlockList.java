@@ -24,4 +24,5 @@ public class BlockList
 	public static Block petrified_trapdoor;
 	public static Block petrified_pressure_plate;
 	public static Block petrified_button;
+	public static Block petrified_chest;
 }

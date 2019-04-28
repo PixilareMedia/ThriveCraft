@@ -16,7 +16,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import pixilaregames.thrivecraft.Lists.BlockList;
 import pixilaregames.thrivecraft.World.DimensionalGenerator;
 
-@SuppressWarnings("unused")
 public class OreGeneration
 {
 	private static final Predicate<IBlockState> IS_NETHERRACK = state -> state.getBlock() == Blocks.NETHERRACK;
@@ -30,10 +29,11 @@ public class OreGeneration
 			biome.addFeature(Decoration.UNDERGROUND_ORES, new CompositeFeature<>(Feature.MINABLE, new MinableConfig(MinableConfig.IS_ROCK, BlockList.onyx_ore.getDefaultState(), 20), new CountRange(), onyx_ore_placement));
 
 			CountRangeConfig onyx_ore_nether_placement = new CountRangeConfig(10, 1, 1, 256);
-			//biome.addFeature(Decoration.UNDERGROUND_ORES, new DimensionalGenerator<>(Feature.MINABLE, new MinableConfig(IS_NETHERRACK, BlockList.onyx_ore.getDefaultState(), 20), new CountRange(), onyx_ore_nether_placement), DimensionType.NETHER);
+			biome.addFeature(Decoration.UNDERGROUND_ORES, new DimensionalGenerator<>(Feature.MINABLE, new MinableConfig(IS_NETHERRACK, BlockList.onyx_ore.getDefaultState(), 20), new CountRange(), onyx_ore_nether_placement, DimensionType.NETHER));
+
 			
 			CountRangeConfig onyx_ore_end_placement = new CountRangeConfig(10, 1, 1, 256);
-			//biome.addFeature(Decoration.UNDERGROUND_ORES, new DimensionalGenerator<>(Feature.MINABLE, new MinableConfig(IS_ENDSTONE, BlockList.onyx_ore.getDefaultState(), 20), new CountRange(), onyx_ore_end_placement), DimensionType.THE_END);
+			biome.addFeature(Decoration.UNDERGROUND_ORES, new DimensionalGenerator<>(Feature.MINABLE, new MinableConfig(IS_ENDSTONE, BlockList.onyx_ore.getDefaultState(), 20), new CountRange(), onyx_ore_end_placement, DimensionType.THE_END));
 		}
 	}
 	

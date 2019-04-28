@@ -12,8 +12,10 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemElytra;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -40,6 +42,7 @@ import pixilaregames.thrivecraft.Blocks.Onyx.Onyx_Block;
 import pixilaregames.thrivecraft.Blocks.Onyx.Onyx_Ore;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Bark;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Button;
+import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Chest;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Door;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Fence;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Fence_Gate;
@@ -51,6 +54,7 @@ import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Sapling;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Slab;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Stairs;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Trapdoor;
+import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Petrified_Tree;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Stripped_Petrified_Bark;
 import pixilaregames.thrivecraft.Blocks.PetrifiedWood.Stripped_Petrified_Log;
 import pixilaregames.thrivecraft.Config.ConfigManager;
@@ -68,6 +72,7 @@ import pixilaregames.pixelcore.API.ItemsBase.ItemPickaxeBase;
 import pixilaregames.pixelcore.API.ItemsBase.ItemShovelBase;
 import pixilaregames.pixelcore.API.ItemsBase.ItemSwordBase;
 
+@SuppressWarnings("unused")
 @Mod("thrivecraft")
 public class ThriveCraft
 {
@@ -155,7 +160,7 @@ public class ThriveCraft
 					//ItemList.toothy_shovel = new ItemShovelBase(ToolMaterialList.toothy, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_shovel")),
 					//ItemList.toothry_hoe = new ItemHoeBase(ToolMaterialList.toothy, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_hoe")),
 					//Armor
-					ItemList.dracula_elytra = new ItemDraculaElytra(new Item.Properties().group(thrivecraft)).setRegistryName(location("dracula_elytra")),
+					ItemList.dracula_elytra = new ItemElytra((new Item.Properties()).group(thrivecraft).rarity(EnumRarity.UNCOMMON)).setRegistryName(location("dracula_elytra")),
 					ItemList.toothy_cap = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.HEAD, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
 					//ItemList.toothy_chestplate = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.CHEST, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_chestplate")),
 					//ItemList.toothy_pants = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.LEGS, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_pants")),
@@ -180,7 +185,8 @@ public class ThriveCraft
 					ItemList.petrified_fence_gate = new ItemBlock(BlockList.petrified_fence_gate, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_fence_gate.getRegistryName()),
 					ItemList.petrified_trapdoor = new ItemBlock(BlockList.petrified_trapdoor, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_trapdoor.getRegistryName()),
 					ItemList.petrified_pressure_plate = new ItemBlock(BlockList.petrified_pressure_plate, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_pressure_plate.getRegistryName()),
-					ItemList.petrified_button = new ItemBlock(BlockList.petrified_button, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_button.getRegistryName())
+					ItemList.petrified_button = new ItemBlock(BlockList.petrified_button, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_button.getRegistryName()),
+					ItemList.petrified_chest = new ItemBlock(BlockList.petrified_chest, new Item.Properties().group(thrivecraft)).setRegistryName(BlockList.petrified_chest.getRegistryName())
 			);
 			
 			logger.info("Items Registered");
@@ -200,16 +206,17 @@ public class ThriveCraft
 					BlockList.petrified_log = new Petrified_Log(MaterialColor.ADOBE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_log")),
 					BlockList.petrified_bark = new Petrified_Bark(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_bark")),
 					BlockList.petrified_planks = new Petrified_Planks(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_planks")),
-					BlockList.petrified_sapling = new Petrified_Sapling(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.0f, 1.0f).lightValue(0).sound(SoundType.PLANT)).setRegistryName(location("petrified_sapling")),
+					BlockList.petrified_sapling = new Petrified_Sapling(new Petrified_Tree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().needsRandomTick().hardnessAndResistance(0.0f, 0.0f).sound(SoundType.PLANT)).setRegistryName(location("petrified_sapling")),
 					BlockList.petrified_door = new Petrified_Door(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).variableOpacity().sound(SoundType.WOOD)).setRegistryName(location("petrified_door")),
 					BlockList.petrified_slab = new Petrified_Slab(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).variableOpacity().sound(SoundType.WOOD)).setRegistryName(location("petrified_slab")),
 					BlockList.petrified_stairs = new Petrified_Stairs(BlockList.petrified_planks.getDefaultState(), Block.Properties.from(BlockList.petrified_planks)).setRegistryName(location("petrified_stairs")),
-					BlockList.petrified_leaves = new Petrified_Leaves(Properties.create(Material.LEAVES).hardnessAndResistance(1.0f, 1.0f).lightValue(0).sound(SoundType.PLANT)).setRegistryName(location("petrified_leaves")),
+					BlockList.petrified_leaves = new Petrified_Leaves(Properties.create(Material.LEAVES).hardnessAndResistance(0.2f, 0.2f).needsRandomTick().sound(SoundType.PLANT)).setRegistryName(location("petrified_leaves")),
 					BlockList.petrified_fence = new Petrified_Fence(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_fence")),
 					BlockList.petrified_fence_gate = new Petrified_Fence_Gate(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_fence_gate")),
 					BlockList.petrified_trapdoor = new Petrified_Trapdoor(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_trapdoor")),
 					BlockList.petrified_pressure_plate = new Petrified_Pressure_Plate(Petrified_Pressure_Plate.Sensitivity.EVERYTHING,Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_pressure_plate")),
-					BlockList.petrified_button = new Petrified_Button(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_button"))
+					BlockList.petrified_button = new Petrified_Button(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 10.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_button")),
+					BlockList.petrified_chest = new Petrified_Chest(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 2.0f).sound(SoundType.WOOD)).setRegistryName(location("petrified_chest"))
 			);
 			
 			logger.info("Blocks Registered");

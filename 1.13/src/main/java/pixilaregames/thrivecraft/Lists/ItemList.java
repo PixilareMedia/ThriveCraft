@@ -61,4 +61,5 @@ public class ItemList
 	public static Item petrified_trapdoor;
 	public static Item petrified_pressure_plate;
 	public static Item petrified_button;
+	public static Item petrified_chest;
 }
