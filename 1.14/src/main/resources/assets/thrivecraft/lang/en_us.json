@@ -1,0 +1,68 @@
+{
+	//Onyx Stuff
+	//Items
+	"item.thrivecraft.onyx_gem": "Onyx Gem",
+	//Tools
+	"item.thrivecraft.onyx_sword": "Onyx Sword",
+	"item.thrivecraft.onyx_axe": "Onyx Axe",
+	"item.thrivecraft.onyx_pickaxe": "Onyx pickaxe",
+	"item.thrivecraft.onyx_shovel": "Onyx Shovel",
+	"item.thrivecraft.onyx_hoe": "Onyx Hoe",
+	//Armor
+	"item.thrivecraft.onyx_helmet": "Onyx Helmet",
+	"item.thrivecraft.onyx_chestplate": "Onyx Chestplate",
+	"item.thrivecraft.onyx_leggings": "Onyx Leggings",
+	"item.thrivecraft.onyx_boots": "Onyx Boots",
+	//Blocks
+	"block.thrivecraft.onyx_block": "Onyx Block",
+	"block.thrivecraft.onyx_ore": "Onyx Ore",
+	
+	//Petrified Cave Mob Stuff
+	//Dracula Stuff
+	//Items
+	"item.thrivecraft.dracula_fang": "Dracula Fang",
+	"item.thrivecraft.dracula_wing": "Dracula Wing",
+	"item.thrivecraft.dracula_membrane": "Dracula Membrane",
+	//Tools
+	"item.thrivecraft.toothy_sword": "Toothy Sword",
+	"item.thrivecraft.toothy_axe": "Toothy Axe",
+	"item.thrivecraft.toothy_pickaxe": "Toothy Pickaxe",
+	"item.thrivecraft.toothy_shovel": "Toothy Shovel",
+	"item.thrivecraft.toothy_hoe": "Toothy Hoe",
+	//Armor
+	"item.thrivecraft.dracula_elytra": "Dracula Elytra",
+	"item.thrivecraft.toothy_cap": "Toothy Cap",
+	"item.thrivecraft.toothy_chestplate": "Toothy Chestplate",
+	"item.thrivecraft.toothy_pants": "Toothy Pants",
+	"item.thrivecraft.toothy_boots": "Toothy Boots",
+	//Spider Stuff
+	//Items
+	"item.thrivecraft.spider_leg": "Spider Leg",
+	
+	//Petrified Wood Stuff
+	//Blocks
+	"block.thrivecraft.stripped_petrified_log": "Stripped Petrified Log",
+	"block.thrivecraft.stripped_petrified_bark": "Stripped Petrified Bark",
+	"block.thrivecraft.petrified_log": "Petrified Log",
+	"block.thrivecraft.petrified_bark": "Petrified Bark",
+	"block.thrivecraft.petrified_planks": "Petrified Planks",
+	"block.thrivecraft.petrified_sapling": "Petrified Sapling",
+	"block.thrivecraft.petrified_door": "Petrified Door",
+	"block.thrivecraft.petrified_slab":"Petrified Slab",
+	"block.thrivecraft.petrified_stairs":"Petrified Stairs",
+	"block.thrivecraft.petrified_leaves": "Petrified Leaves",
+	"block.thrivecraft.petrified_fence": "Petrified Fence",
+	"block.thrivecraft.petrified_fence_gate": "Petrified Fence Gate",
+	"block.thrivecraft.petrified_trapdoor": "Petrified Trapdoor",
+	"block.thrivecraft.petrified_pressure_plate": "Petrified Pressure Plate",
+	"block.thrivecraft.petrified_button": "Petrified Button",
+	"block.thrivecraft.petrified_chest": "Petrified Chest",
+	
+	//Test Stuff
+	//Blocks
+	"block.thrivecraft.jar": "Jar",
+	
+	//Guis
+	//Creative
+	"itemGroup.thrivecraft": "Thrive Craft"
+}
