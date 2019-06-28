@@ -1,0 +1,27 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "RR",
+        "SR",
+        "S "
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:onyx_gem"
+        },
+        "S":
+        {
+        	"item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:onyx_axe"
+    }
+}

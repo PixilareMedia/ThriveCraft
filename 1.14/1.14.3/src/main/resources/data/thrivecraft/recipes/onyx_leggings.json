@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "RRR",
+        "R R",
+        "R R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:onyx_gem"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:onyx_leggings"
+    }
+}

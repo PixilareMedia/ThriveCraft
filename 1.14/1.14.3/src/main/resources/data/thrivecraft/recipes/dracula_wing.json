@@ -1,0 +1,31 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        " R ",
+        "SDS",
+        " R "
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:dracula_membrane"
+        },
+        "S":
+        {
+        	"item": "minecraft:phantom_membrane"
+        },
+        "D":
+        {
+        	"item": "thrivecraft:onyx_gem"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:dracula_wing"
+    }
+}

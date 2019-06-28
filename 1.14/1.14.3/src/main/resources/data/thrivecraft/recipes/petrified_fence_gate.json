@@ -1,0 +1,27 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "SRS",
+        "SRS"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:petrified_planks"
+        },
+        "S":
+        {
+        	"item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:petrified_fence_gate",
+        "count": 1
+    }
+}
