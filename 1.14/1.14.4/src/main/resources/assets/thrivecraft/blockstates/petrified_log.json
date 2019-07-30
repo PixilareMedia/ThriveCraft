@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        //"": { "model": "thrivecraft:block/petrified_log" }
+        "axis=y":  { "model": "thrivecraft:block/petrified_log" },
+        "axis=z":   { "model": "thrivecraft:block/petrified_log", "x": 90 },
+        "axis=x":   { "model": "thrivecraft:block/petrified_log", "x": 90, "y": 90 }
+    }
+}

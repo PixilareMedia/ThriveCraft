@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:onyx_block"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:onyx_gem",
+        "count": 9
+    }
+}

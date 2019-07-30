@@ -49,6 +49,6 @@ SETTING UP A FORGE MDK WORKSPACE
 17. Now you may hit the "Apply and Close" button
 --Beyond Here In The SETTING UP A FORGE MDK WORKSPACE Is If You Are Going TO Compile A Mod That Uses The PixelCore Mod--
 18. Find The build.gradlew file in the workspace and open it in a text editor
-19. Go down to about line 74
-20. Go to the end of line 74 and push enter and add the following "compile files("You/File/Path/To/PixelCore-API.jar")"
+19. Go down to about line 94
+20. Go to the end of line 94 and push enter and add the following "compile files("You/File/Path/To/PixelCore-API.jar")"
 21. Save the build.gradlew and now you may compile mods useing the PixelCore mod
