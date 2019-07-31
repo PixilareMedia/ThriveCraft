@@ -1,7 +1,7 @@
 TERMS
 workspace = the folder where you have the mdk stored
 cmd = Command Prompt
-PixelCore-API-mc1.14.2 is located at https://github.com/PixilareGames/PixelCore
+PixelCore-API-MC-1.14.4 is located at https://github.com/PixilareGames/PixelCore
 
 UPDATEING FORGE MDK
 01. Download the forge mdk that is the latest

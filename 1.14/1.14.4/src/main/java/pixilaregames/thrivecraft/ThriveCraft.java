@@ -13,14 +13,18 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.ai.attributes.IAttributeInstance;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ElytraItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Rarity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent.Register;
+import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.ModList;
@@ -66,7 +70,7 @@ import pixilaregames.thrivecraft.Config.Config;
 import pixilaregames.thrivecraft.Items.Dracula.Dracula_Fang;
 import pixilaregames.thrivecraft.Items.Dracula.Dracula_Membrane;
 import pixilaregames.thrivecraft.Items.Dracula.Dracula_Wing;
-import pixilaregames.thrivecraft.Items.Dracula.ItemDraculaElytra;
+import pixilaregames.thrivecraft.Items.Dracula.DraculaElytra;
 import pixilaregames.thrivecraft.Items.Onyx.Onyx_Gem;
 import pixilaregames.thrivecraft.Items.Spider.Spider_Leg;
 import pixilaregames.pixelcore.API.ItemsBase.ItemArmorBase;
@@ -168,7 +172,7 @@ public class ThriveCraft
 					//ItemList.toothy_shovel = new ItemShovelBase(ToolMaterialList.toothy, -1.0f, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_shovel")),
 					//ItemList.toothry_hoe = new ItemHoeBase(ToolMaterialList.toothy, 6.0f, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_hoe")),
 					//Armor
-					ItemList.dracula_elytra = new ElytraItem((new Item.Properties()).group(thrivecraft)).setRegistryName(location("dracula_elytra")),
+					ItemList.dracula_elytra = new DraculaElytra((new Item.Properties()).maxDamage(432).group(thrivecraft).rarity(Rarity.UNCOMMON)).setRegistryName(location("dracula_elytra")),
 					ItemList.toothy_cap = new ItemArmorBase(ArmorMaterialList.Toothy, EquipmentSlotType.HEAD, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_cap")),
 					//ItemList.toothy_chestplate = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.CHEST, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_chestplate")),
 					//ItemList.toothy_pants = new ItemArmorBase(ArmorMaterialList.Toothy, EntityEquipmentSlot.LEGS, new Item.Properties().group(thrivecraft)).setRegistryName(location("toothy_pants")),
