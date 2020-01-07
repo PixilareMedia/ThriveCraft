@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "RR",
+        "RR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:stripped_petrified_log"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:stripped_petrified_bark",
+        "count": 4
+    }
+}

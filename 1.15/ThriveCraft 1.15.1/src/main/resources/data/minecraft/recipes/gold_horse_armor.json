@@ -1,0 +1,28 @@
+{
+    "type": "crafting_shaped",
+    "group": "horses",
+   
+    "pattern":
+    [
+    	"  R",
+        "RWR",
+        "R R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        "W":
+        {
+        	"tag": "minecraft:wool"
+        }
+    },
+   
+    "result":
+    {
+        "item": "minecraft:golden_horse_armor"
+    }
+}

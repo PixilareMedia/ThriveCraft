@@ -1,0 +1,24 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "RR",
+        "RR",
+        "RR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:petrified_planks"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:petrified_door",
+        "count": 3
+    }
+}

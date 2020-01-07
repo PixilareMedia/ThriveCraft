@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values":
+  [
+    "thrivecraft:petrified_log",
+    "thrivecraft:petrified_bark",
+    "thrivecraft:stripped_petrified_log",
+    "thrivecraft:stripped_petrified_bark"
+  ]
+}

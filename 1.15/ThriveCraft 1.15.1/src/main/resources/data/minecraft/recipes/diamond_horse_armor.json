@@ -1,0 +1,28 @@
+{
+    "type": "crafting_shaped",
+    "group": "horses",
+   
+    "pattern":
+    [
+    	"  R",
+        "RWR",
+        "R R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "minecraft:diamond"
+        },
+        "W":
+        {
+        	"tag": "minecraft:wool"
+        }
+    },
+   
+    "result":
+    {
+        "item": "minecraft:diamond_horse_armor"
+    }
+}
