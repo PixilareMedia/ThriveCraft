@@ -1,12 +1,11 @@
 modLoader="javafml"
-loaderVersion="[28,)"
+loaderVersion="[30,)"
 issueTrackerURL="https://github.com/PixilareGames/ThriveCraft/issues"
 
 [[mods]] #mandatory
 	modId="thrivecraft"
 	version="1.0"
 	displayName="Thrive Craft"
-	updateJSONURL="https://github.com/PixilareGames/ThriveCraft/tree/master/1.14/1.14.4"
 	displayURL="https://github.com/PixilareGames/ThriveCraft"
 	logoFile="thrivecraft.png"
 	credits="Herobrain_gamer For Coding, GamerGabriel For Textures, TheTrueDuility For Helping"
@@ -16,14 +15,14 @@ issueTrackerURL="https://github.com/PixilareGames/ThriveCraft/issues"
 [[dependencies.thrivecraft]]
     modId="forge"
     mandatory=true
-    versionRange="[28,)"
+    versionRange="[30,)"
     ordering="NONE"
     side="BOTH"
     
 [[dependencies.thrivecraft]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.14.4]"
+    versionRange="[1.15.1]"
     ordering="NONE"
     side="BOTH"
     

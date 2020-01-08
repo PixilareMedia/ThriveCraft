@@ -21,6 +21,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Rarity;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent.Register;
@@ -111,13 +112,13 @@ public class ThriveCraft
 	
 	private void setup(final FMLCommonSetupEvent event)
 	{
-		OreGeneration.setupOreGeneration();
+		OreGeneration.setupWorldGeneration();
 		logger.info("Setup method registered");
 	}
 	
 	private void clientRegisteries(final FMLClientSetupEvent event)
 	{
-		RnederRegistry.registryEntityRenders();
+		//RnederRegistry.registryEntityRenders();
 		logger.info("Client registeries method registered");
 	}
 	
@@ -230,7 +231,8 @@ public class ThriveCraft
 					BlockList.petrified_trapdoor = new Petrified_Trapdoor(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 2.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_trapdoor")),
 					BlockList.petrified_pressure_plate = new Petrified_Pressure_Plate(Petrified_Pressure_Plate.Sensitivity.EVERYTHING,Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 2.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_pressure_plate")),
 					BlockList.petrified_button = new Petrified_Button(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 2.0f).lightValue(0).sound(SoundType.WOOD)).setRegistryName(location("petrified_button")),
-					BlockList.petrified_chest = new Petrified_Chest(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 2.0f).sound(SoundType.WOOD)).setRegistryName(location("petrified_chest"))
+					BlockList.petrified_chest = new Petrified_Chest(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.5f, 2.5f).sound(SoundType.WOOD), () -> {return TileEntityType.CHEST;}).setRegistryName(location("petrified_chest"))
+					//BlockList.petrified_chest = new Petrified_Chest(Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 2.0f).sound(SoundType.WOOD)).setRegistryName(location("petrified_chest"))
 			);
 			
 			logger.info("Blocks Registered");
@@ -240,10 +242,10 @@ public class ThriveCraft
 		{
 			event.getRegistry().registerAll
 			(
-					EntitiesList.BlackWidow
+					//EntitiesList.BlackWidow
 			);
 			
-			EntitiesList.registerEntityWorldSpawns();
+			//EntitiesList.registerEntityWorldSpawns();
 			
 			logger.info("Entities Registered");
 		}
