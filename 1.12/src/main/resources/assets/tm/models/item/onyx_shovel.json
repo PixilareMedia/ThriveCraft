@@ -1,6 +1,0 @@
-{
-   "parent": "item/handheld",
-   "textures": {
-       "layer0": "tm:items/onyx_shovel"
-   }
-}

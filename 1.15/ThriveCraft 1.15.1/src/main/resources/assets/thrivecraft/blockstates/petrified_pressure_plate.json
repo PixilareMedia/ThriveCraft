@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "powered=false": { "model": "thrivecraft:block/petrified_pressure_plate" },
-        "powered=true": { "model": "thrivecraft:block/petrified_pressure_plate_down" }
-    }
-}

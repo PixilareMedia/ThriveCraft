@@ -1,7 +1,0 @@
-{
-   "parent": "block/door_bottom",
-   "textures": {
-       "bottom": "thrivecraft:block/petrified_door_bottom",
-       "top": "thrivecraft:block/petrified_door_top"
-   }
-}
