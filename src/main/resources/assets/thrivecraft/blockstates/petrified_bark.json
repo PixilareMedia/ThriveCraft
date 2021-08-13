@@ -1,0 +1,22 @@
+{
+    "variants":
+    {
+        "": { "model": "thrivecraft:block/petrified_bark" }
+    }
+}
+{
+  "variants": {
+    "axis=x": {
+      "model": "thrivecraft:block/petrified_bark",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "thrivecraft:block/petrified_bark"
+    },
+    "axis=z": {
+      "model": "thrivecraft:block/petrified_bark",
+      "x": 90
+    }
+  }
+}

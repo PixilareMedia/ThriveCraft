@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thrivecraft:block/stripped_petrified_bark",
+    "side": "thrivecraft:block/stripped_petrified_bark"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values":
+  [
+    "thrivecraft:petrified_chest",
+    "thrivecraft:petrified_button",
+    "thrivecraft:petrified_trapdoor",
+    "thrivecraft:petrified_fence_gate",
+    "thrivecraft:petrified_fence",
+    "thrivecraft:petrified_pressure_plate",
+    "thrivecraft:petrified_stairs",
+    "thrivecraft:petrified_slab",
+    "thrivecraft:petrified_door",
+    "thrivecraft:petrified_sapling",
+    "thrivecraft:petrified_planks",
+    "thrivecraft:petrified_log",
+    "thrivecraft:petrified_bark",
+    "thrivecraft:stripped_petrified_log",
+    "thrivecraft:stripped_petrified_bark"
+  ]
+}

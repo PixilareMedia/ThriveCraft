@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="All rights reserved"
+issueTrackerURL="https://github.com/PixilareMedia/ThriveCraft/issues"
+
+[[mods]]
+modId="thrivecraft"
+version="${file.jarVersion}"
+displayName="Thrive Craft"
+updateJSONURL="https://download.pixilaremedia.com/pixilare-media/thrive-craft/updates.json"
+displayURL="https://www.pixilaremedia.com/projects/thrive-craft/"
+logoFile= "logo.png"
+credits="Herobrain_gamer for coding, TheTrueDuility for textures and miscellaneous stuff"
+authors="Herobrain_gamer, TheTrueDuality"
+description='''
+Ian Please Add More Information.
+'''
+
+[[dependencies.thrivecraft]]
+    modId="forge"
+    mandatory=true
+    versionRange="[37,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.thrivecraft]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.thrivecraft]]
+    modId="pixelcore"
+    mandatory=true
+    versionRange="[1.0,)"
+    ordering="NONE"
+    side="BOTH"

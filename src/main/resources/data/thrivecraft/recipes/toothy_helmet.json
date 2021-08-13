@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "RRR",
+        "R R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:dracula_fang"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:toothy_helmet"
+    }
+}

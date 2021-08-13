@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "thrivecraft:block/stripped_petrified_log_top",
+    "side": "thrivecraft:block/stripped_petrified_log"
+  }
+}

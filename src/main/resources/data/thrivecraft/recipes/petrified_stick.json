@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "R",
+        "R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:petrified_planks"
+        }
+    },
+   
+    "result":
+    {
+        "item": "minecraft:stick",
+        "count": 4
+    }
+}

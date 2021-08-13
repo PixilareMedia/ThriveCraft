@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shaped",
+   
+    "pattern":
+    [
+        "RSR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "thrivecraft:dracula_wing"
+        },
+        "S":
+        {
+        	"item": "minecraft:elytra"
+        }
+    },
+   
+    "result":
+    {
+        "item": "thrivecraft:dracula_elytra"
+    }
+}
